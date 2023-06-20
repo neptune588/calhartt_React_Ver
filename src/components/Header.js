@@ -1,8 +1,13 @@
 import React from 'react';
-import {Container, Nav, Navbar} from 'react-bootstrap';
+
+import {Container, Nav, Navbar, Form, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+import './common.scss';
+import './header.scss';
 
 export default function Header() {
   const navigate = useNavigate();
@@ -18,17 +23,26 @@ export default function Header() {
   }, []);
 
   return (
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
+      <Navbar className="nav_ex" bg="dark" data-bs-theme="dark">
+        <Container className="nav">
           <Navbar.Brand className="main_logo" onClick={() => {navigate('/')}}>
-            <img src = {process.env.PUBLIC_URL + `images/main_logo.png`}/>
+            <img src = {process.env.PUBLIC_URL + `images/main_logo.png`} alt="main_logo"/>
           </Navbar.Brand>
           
-          <Nav className="nav_ex">
+          <Nav className="lnb">
             {subMenuArray.map((value, i) => {
-              return <Nav.Link key={`${value + i}`} onClick={() => {navigate('/top')}}>{subMenuArray[i]}</Nav.Link>
+              return <Nav.Link className='sub_menu' key={`${value + i}`} onClick={() => {navigate('/top')}}>{subMenuArray[i]}</Nav.Link>
             })}
           </Nav>
+          <Form className="d-flex search_area">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2 search_bar"
+              aria-label="Search"
+            />
+            <Button className="search_btn" variant="outline-success">Search</Button>
+          </Form>
         </Container>
       </Navbar>
   )
