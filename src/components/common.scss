@@ -1,0 +1,111 @@
+/************************* color_plan ***************************/
+$point_color_amber : #ffbf00;
+$point_color_black : #000;
+$main_color_flora_white : #FFFDF6;
+$sub_color_free_speach_blue : #4136BF;
+$color_white : #fff;
+
+/************************* font_plan ***************************/
+@mixin main_title() {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+@mixin sub_title() {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+$defalut_font_size : 1.6rem;
+$small_font_size : 1.2rem;
+$small_up_font_size : 1.4rem;
+
+$font_noto_sans : 'Noto Sans KR',
+sans-serif;
+$font_perment_marker : 'Permanent Marker';
+
+/************************* gap＆padding ***************************/
+@mixin gap($value) {
+    margin: $value;
+}
+
+@mixin padding($value) {
+    padding: $value;
+}
+
+/************************* background standard  ***************************/
+@mixin background_contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@mixin background_cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/************************* item_size ***************************/
+@mixin item_size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/************************* text_array ***************************/
+@mixin text_array ($height) {
+    text-align: center;
+    line-height: $height;
+}
+
+/************************* center array  ***************************/
+@mixin box_array {
+    width: 1245px;
+    margin: 0 auto;
+}
+
+/************************* defalut_settings ***************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 10px;
+    background-color: $main_color_flora_white;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.sub_title {
+    @include sub_title;
+    @include text_array(20px);
+    margin: 70px 0 20px;
+    font-family: $font_perment_marker;
+}
+
+.click_btn {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    transform: translateY(-25%);
+    z-index: 9999;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+
+    &:hover {
+        color: #ffbf00 !important;
+    }
+}

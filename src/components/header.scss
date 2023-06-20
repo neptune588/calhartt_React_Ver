@@ -1,0 +1,39 @@
+@import 'common.scss';
+
+.nav_ex {
+    .container {
+        @include box_array;
+        justify-content: space-between;
+        padding: 10px 0;
+        .main_logo {
+            cursor: pointer;
+            @include item_size(175px, 50px);
+            img {
+                vertical-align: bottom;
+            }
+        }
+        .sub_menu {
+            margin-right: 15px;
+            font-weight: 700;   
+            font-size: 2.4rem;
+        }
+        .search_area {
+
+        }
+        .search_bar {
+            border: 1px solid rgb(215, 215, 215);
+            font-size: $defalut_font_size;
+            color: white;
+            margin-right: 10px !important;
+        }
+        .search_btn {
+            color: $point_color_amber;
+            border: 1px solid $point_color_amber;
+            font-size: $defalut_font_size;
+            &:hover {
+                color: white;
+                background-color: $point_color_amber;
+            }
+        }
+    }
+}
