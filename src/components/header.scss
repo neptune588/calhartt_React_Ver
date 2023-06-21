@@ -1,7 +1,8 @@
 @import 'common.scss';
 
 .nav_ex {
-    .container {
+    background-color: black !important;
+    .nav {
         @include box_array;
         justify-content: space-between;
         padding: 10px 0;
@@ -16,15 +17,24 @@
             margin-right: 15px;
             font-weight: 700;   
             font-size: 2.4rem;
+            transition: all 0.2s;
+            color: white;
+            &:hover {
+                background-color: $sub_color_free_speach_blue;
+            }
         }
         .search_area {
 
         }
         .search_bar {
-            border: 1px solid rgb(215, 215, 215);
+            border: 1px solid rgb(131, 131, 131);
             font-size: $defalut_font_size;
             color: white;
             margin-right: 10px !important;
+            &:focus {
+                border: 1px solid white;
+                box-shadow: none;
+            }
         }
         .search_btn {
             color: $point_color_amber;

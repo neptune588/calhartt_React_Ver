@@ -1,4 +1,5 @@
 import './App.scss';
+
 import Header from './components/Header.js';
 import VisualMain from './components/VisualMain';
 

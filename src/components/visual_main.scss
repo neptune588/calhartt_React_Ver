@@ -1,1 +1,9 @@
 @import 'common.scss';
+
+.visual_main_wrapper {
+    .visual_main {
+        flex: 0 0 auto;
+        @include item_size(100%, 500px);
+        cursor: pointer;
+    }
+}

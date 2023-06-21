@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import './common.scss';
 import './header.scss';
 
 export default function Header() {
@@ -15,7 +14,7 @@ export default function Header() {
   const subMenuArray = ['NEW','TOP','BOTTOM','ACC','PROMO','SALE','BRAND'];
 
   useEffect(() => {
-    console.log('컴포넌트 렌더완료');
+    console.log('헤더 컴포넌트 렌더완료');
 
     return () => {
       console.log('정리 완료');
