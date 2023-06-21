@@ -1,4 +1,7 @@
+import React from 'react';
 import './App.scss';
+
+import {Routes, Route} from 'react-router-dom';
 
 import Header from './components/Header.js';
 import VisualMain from './components/VisualMain';
@@ -7,7 +10,12 @@ function App() {
   return (
     <>
       <Header />
-      <VisualMain/>
+
+      <Routes>
+        <Route path="/" element = {
+          <VisualMain/>
+        }/>
+      </Routes>
     </>
   );
 }

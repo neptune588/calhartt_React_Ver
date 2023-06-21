@@ -1,9 +1,40 @@
 @import 'common.scss';
 
 .visual_main_wrapper {
+    position: relative;
     .visual_main {
         flex: 0 0 auto;
-        @include item_size(100%, 500px);
+        @include item_size(100%, 400px);
         cursor: pointer;
+        img {
+            width: 100%;
+        }
+    }
+    .swiper-button-prev, .swiper-button-next {
+        position: absolute;
+        &::after {
+            font-weight: 700;
+            color: $point-color-amber;
+            transition: all 0.3s;
+        }
+        &:hover {
+            &::after {
+                color: $sub_color_free_speach_blue;
+            }
+        }
+    }
+    .swiper-button-prev {
+        left: 5%;
+    }
+    .swiper-button-next {
+        right: 5%;
+    }
+    .swiper-pagination {
+        position: relative;
+        .page_indicator {
+            font-size: $defalut_font_size;
+            margin-right: 15px;
+            color: $sub_color_free_speach_blue;
+        }
     }
 }
