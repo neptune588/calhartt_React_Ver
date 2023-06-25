@@ -7,7 +7,8 @@
         @include item_size(100%, 400px);
         cursor: pointer;
         img {
-            width: 100%;
+            @include item_size(100%, 400px);
+            object-fit: cover;
         }
     }
     .swiper-button-prev, .swiper-button-next {
@@ -30,11 +31,37 @@
         right: 5%;
     }
     .swiper-pagination {
+        position: absolute;
+        width: 800px;
+        margin: 20px auto 0;
         position: relative;
-        .page_indicator {
+        display: flex;
+        justify-content: center;
+        .swiper-pagination-bullet {
+            position: relative;
+            display: inline-block;
+            width: auto; height: auto;
+            margin-right: 30px;
             font-size: $defalut_font_size;
-            margin-right: 15px;
+            font-weight: 700;
             color: $sub_color_free_speach_blue;
+            opacity: 1;
+            background-color: transparent;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 6px; right: -15px;
+                width: 1px; height: 12px;
+                background-color: rgb(165, 165, 165);
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        .swiper-pagination-bullet-active {
+            color: $point-color-amber;
         }
     }
 }
