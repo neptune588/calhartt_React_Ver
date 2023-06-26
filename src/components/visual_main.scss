@@ -2,6 +2,28 @@
 
 .visual_main_wrapper {
     position: relative;
+    .auto_play_area {
+        position: absolute;
+        top: 0; left: 50%;
+        transform: translateX(-50%);
+        width: 1245px; height: 400px;
+        z-index: 15;
+        .auto_area_btn {
+            position: absolute;
+            display: block;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            bottom: 25px;
+        }
+        .play_btn {
+            right: 60px;
+        }
+        .stop_btn {
+            right: 15px;
+        }
+    }
+
     .visual_main {
         flex: 0 0 auto;
         @include item_size(100%, 400px);

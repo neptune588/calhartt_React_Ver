@@ -1,1 +1,80 @@
 @import 'common.scss';
+
+.product_container {
+  position: relative;
+  @include box_array;
+  .arrow_section {
+    position: absolute;
+    @include item_size(100%, 300px);
+    .arrow_btn {
+      position: absolute;
+      color: $point_color_amber;
+      top: 50%;
+      font-weight: 700;
+      transition: all 0.2s;
+      &:hover {
+        color: $sub_color_free_speach_blue;
+      }
+      &.best_product_prev_btn {
+        left: -100px;
+      }
+      &.best_product_next_btn {
+        right: -100px;
+      }
+      &.new_product_prev_btn {
+        left: -100px;
+      }
+      &.new_product_next_btn {
+        right: -100px;
+      }
+    }
+  }
+  .product_section {
+    position: relative;
+    display: flex;
+
+    .product_list {
+      position: relative;
+      height: 300px;
+      cursor: pointer;
+        &::after {
+          content: "";
+          position: absolute;
+          opacity: 0;
+          top: 0; left: 0;
+          @include item_size(100%, 100%);
+          background-color: rgba(0, 0, 0, 0.4);
+          transition: all 0.2s;
+        }
+        img {
+          @include item_size(100%, 300px);
+          object-fit: cover;
+        }
+        .product_info {
+          position: absolute;
+          display: block;
+          opacity: 0;
+          width: 100%;
+          font-size: $small_up_font_size;
+          color: white;
+          text-align: center;
+          z-index: 10;
+          transition: all 0.2s;
+        }
+        .product_model_name {
+          top: 130px;
+        }
+        .product_name {
+          top: 150px;
+        }
+        &:hover {
+          .product_info {
+            opacity: 1;
+          }
+          &::after {
+            opacity: 1;
+          }
+        }
+    }
+  }
+}

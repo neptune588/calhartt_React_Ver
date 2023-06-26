@@ -15,30 +15,37 @@ export default function Header() {
     {
       id: 'sub01',
       name: 'NEW',
+      Linkname: 'new',
     },
     {
       id: 'sub02',
       name: 'TOP',
+      Linkname: 'top',
     },
     {
       id: 'sub03',
       name: 'BOTTOM',
+      Linkname: 'bottom',
     },
     {
       id: 'sub04',
       name: 'ACC',
+      Linkname: 'acc',
     },
     {
       id: 'sub05',
       name: 'PROMO',
+      Linkname: 'promo',
     },
     {
       id: 'sub06',
       name: 'SALE',
+      Linkname: 'sale',
     },
     {
       id: 'sub07',
       name: 'BRAND',
+      Linkname: 'brand',
     },
   ];
 
@@ -59,7 +66,7 @@ export default function Header() {
           
           <Nav className="lnb">
             {subMenuArray.map((object) => {
-              return <Nav.Link className='sub_menu' key={`${object.id}`} onClick={() => {navigate(`/subpage/${object.name}`)}}>{object.name}</Nav.Link>
+              return <Nav.Link className='sub_menu' key={`${object.id}`} onClick={() => {navigate(`/subpage/:${object.Linkname}`)}}>{object.name}</Nav.Link>
             })}
           </Nav>
           <Form className="d-flex search_area">
