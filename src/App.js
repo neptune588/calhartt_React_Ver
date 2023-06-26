@@ -4,7 +4,7 @@ import './App.scss';
 import {Routes, Route} from 'react-router-dom';
 
 import Header from './components/Header.js';
-import VisualMain from './components/VisualMain';
+import Main from './pages/Main.js';
 
 function App() {
   return (
@@ -13,7 +13,10 @@ function App() {
 
       <Routes>
         <Route path="/" element = {
-          <VisualMain/>
+          <Main/>
+        }/>
+        <Route path="subPage" element = {
+          <div>서브페이지입니다.</div>
         }/>
       </Routes>
     </>

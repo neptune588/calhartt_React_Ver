@@ -2,11 +2,10 @@ import React, { useEffect, useState, useRef } from 'react'
 
 import {Routes, Route, Link, useNavigate} from 'react-router-dom';
 
-import { Virtual, Navigation, Pagination } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import 'swiper/css/virtual';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
@@ -42,16 +41,6 @@ export default function VisualMain() {
 
   const navigate = useNavigate();
 
-  const [vmIndex, setVmIndex] = useState(0);
-
-  useEffect(() => {
-    console.log(vmIndex)
-  },[vmIndex]);
-
-/*   function indexChange(value) {
-    setVmIndex(value);
-  } */
-
   const swiperWrapper = {
     className: `visual_main_wrapper`,
     modules: [Navigation, Pagination],
@@ -73,7 +62,7 @@ export default function VisualMain() {
 
   const swiper = {
     className: 'visual_main',
-    onClick: () => {navigate('/top')},
+    onClick: () => {navigate('/subpage')},
   }
 
   //스프레드 문법으로 객체를 prop에다 넣으면 해당 객체의 속성들이

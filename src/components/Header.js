@@ -11,7 +11,36 @@ import './header.scss';
 export default function Header() {
   const navigate = useNavigate();
 
-  const subMenuArray = ['NEW','TOP','BOTTOM','ACC','PROMO','SALE','BRAND'];
+  const subMenuArray = [
+    {
+      id: 'sub01',
+      name: 'NEW',
+    },
+    {
+      id: 'sub02',
+      name: 'TOP',
+    },
+    {
+      id: 'sub03',
+      name: 'BOTTOM',
+    },
+    {
+      id: 'sub04',
+      name: 'ACC',
+    },
+    {
+      id: 'sub05',
+      name: 'PROMO',
+    },
+    {
+      id: 'sub06',
+      name: 'SALE',
+    },
+    {
+      id: 'sub07',
+      name: 'BRAND',
+    },
+  ];
 
   useEffect(() => {
     console.log('헤더 컴포넌트 렌더완료');
@@ -29,8 +58,8 @@ export default function Header() {
           </Navbar.Brand>
           
           <Nav className="lnb">
-            {subMenuArray.map((value, i) => {
-              return <Nav.Link className='sub_menu' key={`${value + i}`} onClick={() => {navigate('/top')}}>{subMenuArray[i]}</Nav.Link>
+            {subMenuArray.map((object) => {
+              return <Nav.Link className='sub_menu' key={`${object.id}`} onClick={() => {navigate(`/subpage/${object.name}`)}}>{object.name}</Nav.Link>
             })}
           </Nav>
           <Form className="d-flex search_area">
