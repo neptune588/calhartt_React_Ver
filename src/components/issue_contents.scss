@@ -1,5 +1,9 @@
 @import 'common.scss';
 
+.opacity_on {
+    opacity: 1 !important; 
+}
+
 .main_issue_contents {
     .look_book {
         @include box_array;
