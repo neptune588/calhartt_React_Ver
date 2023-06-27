@@ -73,7 +73,7 @@ export default function VisualMain() {
       }
     },
     autoplay: {
-      delay: 500,
+      delay: 2000,
     }
   }
 
@@ -87,11 +87,11 @@ export default function VisualMain() {
 /*   유즈이펙트의 의존성배열안의 값으로 값이 바뀐걸 감지한다. swiperObject의 오토플레이 값을 의존성배열에 넣어놓고
   불값이 바뀔때마다 console.log를 띄워보자. 이까진 성공 */
   
-  useEffect(() => {
+/*   useEffect(() => {
     swiperWrapper.autoplay = swiperObject.autoplay;
-    console.log(swiperWrapper.autoplay, swiperObject.autoplay);
+    console.log(swiperWrapper.autoplay);
   },[swiperObject.autoplay]);
-
+ */
   //스프레드 문법으로 객체를 prop에다 넣으면 해당 객체의 속성들이
   //개별로 전달되게 된다.
   return (
@@ -101,8 +101,8 @@ export default function VisualMain() {
 {/*         <button className='play_btn auto_area_btn' onClick={()=>{console.log(swiperObject)}}><ControlBtn icon={faPlay}/></button> 
   autoplay의 속성의 값을 false로 바꾸기.. console에는 잘 나옴 */}
 
-        <button className='play_btn auto_area_btn' onClick={()=>{setSwiperObject({...swiperWrapper, autoplay: true})}}><ControlBtn icon={faPlay}/></button>
-        <button className='stop_btn auto_area_btn' onClick={()=>{setSwiperObject({...swiperWrapper, autoplay: false})}}><ControlBtn icon={faStop}/></button>
+        <button className='play_btn auto_area_btn'><ControlBtn icon={faPlay}/></button>
+        <button className='stop_btn auto_area_btn'><ControlBtn icon={faStop}/></button>
       </div>
 
       {slides.map((object) => (

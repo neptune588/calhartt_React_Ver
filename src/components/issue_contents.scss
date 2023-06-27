@@ -1,1 +1,355 @@
 @import 'common.scss';
+
+.main_issue_contents {
+    .look_book {
+        @include box_array;
+        margin-bottom: 40px;
+
+        .look_book_thumnail {
+            display: flex;
+            margin-bottom: 15px;
+
+            >div {
+                @include item_size(615px, 615px);
+                margin-right: 15px;
+                overflow: hidden;
+            }
+
+            .big_look_book {
+                cursor: pointer;
+                background-color: red;
+                >img {
+                    transition: all 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .video_n_look_book {
+                margin-right: 0;
+
+                .video_film {
+                    height: 300px;
+                    margin-bottom: 15px;
+
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .small_look_book_area {
+                    display: flex;
+
+                    >div {
+                        @include item_size(300px, 300px);
+                        margin-right: 15px;
+                        background-color: black;
+                        cursor: pointer;
+                        overflow: hidden;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        img {
+                            transition: all 0.3s;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .look_book_view {
+            position: relative;
+            width: 100%;
+            margin-bottom: 15px;
+            user-select: none;
+            .v_icon {
+                position: absolute;
+                cursor: pointer;
+                background-color: white;
+                border-radius: 50%;
+                color: black;
+                transform: rotate(268deg);
+                @include item_size(20px, 20px);
+                text-align: center;
+                line-height: 20px;
+                padding-top: 2px;
+                transition: all 0.2s;
+                &:hover {
+                    color: $sub_color_free_speach_blue;
+                }
+                i {
+                    font-size: $small_font_size;
+                }
+            }
+            .hover_img {
+                cursor: pointer;
+                position: absolute;
+                @include background_cover;
+                opacity: 0;
+                transition: all 0.2s;
+                //background-size: 101%;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .text_box {
+                position: absolute;
+                display: inline-block;
+                font-size: $defalut_font_size;
+                font-weight: 700;
+                color: white;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.2s;
+
+                >p {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .tb_01 {
+                top: 120px;
+                left: 720px;
+            }
+
+            .tb_02 {
+                bottom: 140px;
+                left: 330px;
+            }
+
+            .tb_03 {
+                top: 30px;
+                left: 480px;
+            }
+
+            .tb_04 {
+                top: 120px;
+                left: 700px;
+            }
+
+            .tb_05 {
+                bottom: 100px;
+                left: 640px;
+            }
+
+            .tb_06 {
+                top: 30px;
+                left: 680px;
+            }
+
+            .tb_07 {
+                top: 130px;
+                left: 620px;
+            }
+
+            .tb_08 {
+                top: 100px;
+                left: 710px;
+            }
+
+            .tb_09 {
+                bottom: 140px;
+                left: 640px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .look_book_view01 {
+            
+            >.view_icon01 {
+                top: 155px;
+                left: 634px;
+            }
+
+            >.view_icon02 {
+                top: 333px;
+                left: 682px;
+            }
+
+            >.hover_img01 {
+                top: 74px;
+                left: 553px;
+                /* background-image: url(../dist/images/look_book_0_cloth01.png); */
+                @include item_size(152px, 207px);
+                z-index: 1;
+            }
+
+            >.hover_img02 {
+                bottom: 32px;
+                left: 590px;
+                /* background-image: url(../dist/images/look_book_0_cloth02.png); */
+                @include item_size(143px, 230px);
+            }
+        }
+
+        .look_book_view02 {
+            >.view_icon01 {
+                top: 146px;
+                left: 647px;
+            }
+
+            >.view_icon02 {
+                top: 309px;
+                left: 642px;
+            }
+
+            >.view_icon03 {
+                top: 32px;
+                left: 620px;
+            }
+
+            .hover_img01 {
+                top: 31px;
+                left: 607px;
+                /* background-image: url(../dist/images/look_book_1_cloth01.png); */
+                @include item_size(54px, 35px);
+            }
+
+            .hover_img02 {
+                top: 92px;
+                left: 538px;
+                /* background-image: url(../dist/images/look_book_1_cloth02.png); */
+                @include item_size(146px, 169px);
+                z-index: 1;
+            }
+
+            .hover_img03 {
+                bottom: 174px;
+                left: 549px;
+                /* background-image: url(../dist/images/look_book_1_cloth03.png); */
+                @include item_size(130px, 147px);
+            }
+        }
+
+        .look_book_view03 {
+            >.view_icon01 {
+                top: 19px;
+                left: 616px;
+            }
+
+            >.view_icon02 {
+                top: 146px;
+                left: 612px;
+            }
+
+            >.view_icon03 {
+                top: 304px;
+                left: 629px;
+            }
+
+            >.view_icon04 {
+                top: 204px;
+                left: 561px;
+            }
+
+
+            .hover_img01 {
+                top: 14px;
+                left: 598px;
+                /* background-image: url(../dist/images/look_book_2_cloth01.png); */
+                @include item_size(49px, 36px);
+            }
+
+            .hover_img02 {
+                top: 95px;
+                left: 524px;
+                /* background-image: url(../dist/images/look_book_2_cloth02.png); */
+                @include item_size(81px, 184px);
+                z-index: 2;
+            }
+
+            .hover_img03 {
+                top: 79px;
+                left: 535px;
+                /* background-image: url(../dist/images/look_book_2_cloth03.png); */
+                @include item_size(174px, 203px);
+                z-index: 1;
+            }
+
+            .hover_img04 {
+                bottom: 144px;
+                left: 554px;
+                /* background-image: url(../dist/images/look_book_2_cloth04.png); */
+                @include item_size(120px, 128px);
+            }
+        }
+    }
+
+    .mds_pick {
+        @include box_array;
+        margin-bottom: 40px;
+
+        ul {
+            display: flex;
+            li {
+                @include item_size(195px, 400px);
+                margin-right: 15px;
+                overflow: hidden;
+                transition: all 0.5s;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.acodian_on {
+                    position: relative;
+                    @include item_size(615px, 400px);
+                    .img_link {
+                        height: 100%;
+                        img {
+                            width: 100%; height: 100%;
+                        }
+                    } 
+                    .product_info {
+                        position: absolute;
+                        width: 280px;
+                        height: 400px;
+                        padding: 40px 20px;
+                        top: 0; right: 0;
+                        z-index: 10;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        transition: all 0.8s;
+                        >p {
+                            color: white;
+                            font-size: $defalut_font_size;
+                            font-family: $font_noto_sans;
+                            letter-spacing: -0.8px;
+                        }
+                        .md_info_text04 {
+                            margin-bottom: 10px;
+                        }
+                        .buy_button {
+                            display: inline-block;
+                            margin-top: 20px;
+                            padding: 10px 25px;
+                            font-size: $small_up_font_size;
+                            font-family: $font_noto_sans;
+                            letter-spacing: -0.8px;
+                            background-color: #ffbf00;
+                            border-radius: 5px;
+                            transition: all 0.2s;
+                            &:hover {
+                                background-color: #4136BF;
+                                color: white;
+                            }
+                        }
+                    }
+                    img {
+                        width: 100%; height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
