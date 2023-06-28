@@ -1,0 +1,96 @@
+@import 'common.scss';
+
+/************************ control_class *******************/
+
+.ani_stop {
+    animation-play-state: paused;
+}
+.ani_play {
+    animation-play-state: running;
+}
+
+
+/************************ insta *******************/
+
+.insta {
+    margin-bottom: 40px;
+    .insta_frame {
+        display: flex;
+        width: 100%; height: 340px;
+        position: relative;
+        overflow: hidden;
+        ul {
+            display: flex;
+            position: absolute;
+            &.insta_move_ul02 {
+                margin-left: 2520px;
+            }
+            li {    
+                position: relative;
+                overflow: hidden;
+                flex: 0 0 auto;
+                margin-right: 15px;
+                @include item_size(300px, 300px);
+                img {
+                    @include item_size(100% !important, 100% !important);
+                    object-fit: cover;
+                }
+            }
+        }
+        .animate {
+            animation: insta_ani 20s linear infinite;
+            li {
+                &::before {
+                    content: "\f16d";
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 50px;
+                    font-family: "Font Awesome 5 Brands";
+                    font-weight: 400;
+                    z-index: 10;
+                    animation: icon 1s linear both; 
+                    color: white;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%; height: 100%;
+                    background-color:black; 
+                    animation: bgc 1s linear both; 
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+
+/************************ key_frame *******************/
+
+@keyframes insta_ani {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes icon {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes bgc {
+    0% {
+        width: 100%; height: 100%;
+    }
+    100% {
+        width: 0; height: 0;
+    }
+}

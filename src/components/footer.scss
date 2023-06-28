@@ -1,0 +1,116 @@
+@import 'common.scss';
+
+/************************* site_info ***************************/
+ul {
+    margin-bottom: 0;
+}
+.site_info {
+    .info_list {
+        @include box_array;
+        text-align: center;
+        font-size: 0;
+        padding: 30px 0;
+
+        li {
+            display: inline-block;
+            width: 20%;
+            font-size: $defalut_font_size;
+            font-weight: 700;
+            border-right: 1px solid #bbbbbb;
+            cursor: pointer;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}
+
+/************************* footer_ex ***************************/
+.footer_ex {
+    background-color: $point_color_black;
+    color: $color_white;
+
+    .footer {
+        @include box_array;
+
+        .footer_top {
+            display: flex;
+            justify-content: space-between;
+
+            .footer_left {
+                width: 75%;
+
+                .guide_list {
+                    overflow: hidden;
+                    margin: 20px 0 40px;
+
+                    li {
+                        float: left;
+                        margin-right: 30px;
+                        font-size: $small_font_size;
+                        cursor: pointer;
+                    }
+                }
+
+                .business_info_list {
+                    margin-bottom: 40px;
+
+                    li {
+                        font-size: $small_up_font_size;
+                        letter-spacing: -0.8px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+            .footer_right {
+                margin-top: 10px;
+                width: 25%;
+
+                .sns_list {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    li {
+                        font-size: 3rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .contact_info_list {
+                    li {
+                        overflow: hidden;
+                        font-size: $small_up_font_size;
+                        margin-bottom: 15px;
+                        span {
+                            &:first-child {
+                                float: left;
+                                font-size: $defalut_font_size;
+                                font-weight: 700;
+                            }
+
+                            &:last-child {
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .notice {
+            display: flex;
+            padding-bottom: 40px;
+
+            li {
+                margin-right: 20px;
+                font-size: $small_up_font_size;
+                letter-spacing: -0.8px;
+                cursor: pointer;
+
+            }
+        }
+    }
+}

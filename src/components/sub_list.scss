@@ -1,0 +1,129 @@
+@import 'common.scss';
+
+/************************* visual_sub ***************************/
+.visual_sub {
+    position: relative;
+    overflow: hidden;
+    @include item_size(100%, 400px);
+    margin-bottom: 20px;
+
+    .ment_box_ex {
+        position: absolute;
+        left: 50%; bottom: 0;
+        transform: translateX(-50%);
+        width: 1245px; height: 400px;
+
+        .ment_box {
+            position: absolute;
+            left: 0px; bottom: 25px;
+            width: 800px; height: 120px;
+            padding-top: 20px;
+            padding-left: 25px;
+            background-color: rgba(0, 0, 0, 0.4);
+            h2 {
+                color: white;
+                font-size: 24px;
+                font-family: $font_perment_marker;
+            }
+            p {
+                color: white;
+                margin-top: 10px;
+                font-family: $font_noto_sans;
+                font-size: $defalut_font_size;
+            }
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    @include box_array;
+    margin-bottom: 120px;
+    .product_list_wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .row {
+            margin: 0;
+            padding: 0;
+            .product {
+                position: relative;
+                padding: 0;
+                margin-right: 15px;
+                width: 300px;
+                flex: 0 0 auto;
+                cursor: pointer;
+                &:nth-child(4n) {
+                    margin-right: 0;
+                }
+                &.link_hidden {
+                    display: none;
+                }
+                img {
+                    @include item_size(300px, 420px);
+                    object-fit: cover;
+                }
+                .img_link_01 {
+                    position: absolute;
+                    top: 0;
+                    transition: all 0.3s;
+                    opacity: 1;
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+                .product_name {
+                    font-size: $small_up_font_size;
+                    font-family: $font_noto_sans;
+                    font-weight: 700;
+                    margin-top: 6px;
+                }
+                .model_name {
+                    font-size: $small_up_font_size;
+                    font-family: $font_noto_sans;
+                }
+                .price {
+                    display: inline-block;
+                    font-size: 18px;
+                    font-family: $font_noto_sans;
+                    margin-bottom: 60px;
+                }
+                .price_unit {
+                    font-size: 20px;
+                    margin-right: 2px;
+                }
+                .best, .new {
+                    display: inline-block;
+                    margin-top: 6px;
+                    margin-right: 5px;
+                    font-size: $small_up_font_size;
+                    font-weight: 700;
+                }
+                .best {
+                    color: #8e2720;
+                    animation: best 0.8s infinite;
+                }
+                .new {
+                    color: #4136BF;
+                    animation: new 0.8s 0.4s infinite;
+                }
+                @keyframes best {
+                    50% {
+                        color: #d88f8a;
+                    }
+                    100% {
+                        color: #b92d23;
+                    }
+                }
+                @keyframes new {
+                    50% {
+                        color: #938beb;
+                    }
+                    100% {
+                        color: #4136BF;
+                    }
+                }
+            }
+        }
+    }
+}

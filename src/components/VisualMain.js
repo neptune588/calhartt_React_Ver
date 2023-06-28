@@ -96,14 +96,14 @@ export default function VisualMain() {
   //개별로 전달되게 된다.
   return (
     <Swiper {...swiperWrapper}>
-      <div className='auto_play_area'>
+{/*       <div className='auto_play_area'>
 
-{/*         <button className='play_btn auto_area_btn' onClick={()=>{console.log(swiperObject)}}><ControlBtn icon={faPlay}/></button> 
-  autoplay의 속성의 값을 false로 바꾸기.. console에는 잘 나옴 */}
+        <button className='play_btn auto_area_btn' onClick={()=>{console.log(swiperObject)}}><ControlBtn icon={faPlay}/></button> 
+          autoplay의 속성의 값을 false로 바꾸기.. console에는 잘 나옴
 
         <button className='play_btn auto_area_btn'><ControlBtn icon={faPlay}/></button>
         <button className='stop_btn auto_area_btn'><ControlBtn icon={faStop}/></button>
-      </div>
+      </div> */}
 
       {slides.map((object) => (
         <SwiperSlide {...swiper} key={object.id}>

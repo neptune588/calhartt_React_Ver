@@ -1,0 +1,581 @@
+[
+    {
+        "id": "CA22FWJAJH10144002",
+        "propertyNumber": 1,
+        "productNameKor": "알링턴 베스트 에일 헤비 스톤 워시",
+        "productModelName": "ALE HEAVY STONE WASH",
+        "productColor": "brown",
+        "productStyle": "jaket",
+        "price": 283000,
+        "priceRate": "250000~500000",
+        "imgSrc": [
+            "./images/sub_page_img/CA22FWJAJH10144002/CA22FWJAJH10144002-1.jpg",
+            "./images/sub_page_img/CA22FWJAJH10144002/CA22FWJAJH10144002-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": true,
+        "isSales": true,
+        "isSalesRateValue": "30~50",
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSJAJL00358002",
+        "propertyNumber": 2,
+        "productNameKor": "코스탈 자켓 블랙/화이트",
+        "productModelName": "COASTAL JACKET BLACK",
+        "productColor": "black",
+        "productStyle": "jaket",
+        "price": 248000,
+        "priceRate": "150000~250000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSJAJL00358002/CA23SSJAJL00358002-1.jpg",
+            "./images/sub_page_img/CA23SSJAJL00358002/CA23SSJAJL00358002-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": true,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSJAJL00266002",
+        "propertyNumber": 3,
+        "productNameKor": "코스탈 자켓 화이트/블랙",
+        "productModelName": "COASTAL JACKET WHITE",
+        "productColor": "white",
+        "productStyle": "jaket",
+        "price": 248000,
+        "priceRate": "150000~250000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSJAJL00266002/CA23SSJAJL00266002-1.jpg",
+            "./images/sub_page_img/CA23SSJAJL00266002/CA23SSJAJL00266002-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": true,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA22FWJAJL00026001",
+        "propertyNumber": 4,
+        "productNameKor": "리그 자켓 블루",
+        "productModelName": "LEAGUE JACKET",
+        "productColor": "blue",
+        "productStyle": "jaket",
+        "price": 263000,
+        "priceRate": "250000~500000",
+        "imgSrc": [
+            "./images/sub_page_img/CA22FWJAJL00026001/CA22FWJAJL00026001-1.jpg",
+            "./images/sub_page_img/CA22FWJAJL00026001/CA22FWJAJL00026001-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": false,
+        "isSales": true,
+        "isSalesRateValue": "30~50",
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA22FWJAJL10171001",
+        "propertyNumber": 5,
+        "productNameKor": "레터맨 자켓 블랙/브릭",
+        "productModelName": "LETTERMAN JACKET",
+        "productColor": "black",
+        "productStyle": "jaket",
+        "price": 258000,
+        "priceRate": "250000~500000",
+        "imgSrc": [
+            "./images/sub_page_img/CA22FWJAJL10171001/CA22FWJAJL10171001-1.jpg",
+            "./images/sub_page_img/CA22FWJAJL10171001/CA22FWJAJL10171001-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": false,
+        "isSales": true,
+        "isSalesRateValue": "30~50",
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA22FWJAHS00285001",
+        "propertyNumber": 6,
+        "productNameKor": "트레버 자켓 블랙/블랙",
+        "productModelName": "TREVOR JACKET",
+        "productColor": "black",
+        "productStyle": "jaket",
+        "price": 343000,
+        "priceRate": "250000~500000",
+        "imgSrc": [
+            "./images/sub_page_img/CA22FWJAHS00285001/CA22FWJAHS00285001-1.jpg",
+            "./images/sub_page_img/CA22FWJAHS00285001/CA22FWJAHS00285001-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": false,
+        "isSales": true,
+        "isSalesRateValue": "30~50",
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA22SSSHLS09389001",
+        "propertyNumber": 7,
+        "productNameKor": "긴팔 매디슨 셔츠 페일 쿼츠/화이트",
+        "productModelName": "L/S MADISON SHIRT",
+        "productColor": "pink",
+        "productStyle": "shirt",
+        "price": 113000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA22SSSHLS09389001/CA22SSSHLS09389001-1.jpg",
+            "./images/sub_page_img/CA22SSSHLS09389001/CA22SSSHLS09389001-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": false,
+        "isSales": true,
+        "isSalesRateValue": "30~50",
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA22FWJAJL10139001",
+        "propertyNumber": 8,
+        "productNameKor": "매닝 셔츠 자켓 매닝 체크, 다크 엄버/레더",
+        "productModelName": "MANNING SHIRT JAC",
+        "productColor": "brown",
+        "productStyle": "shirt",
+        "price": 278000,
+        "priceRate": "250000~500000",
+        "imgSrc": [
+            "./images/sub_page_img/CA22FWJAJL10139001/CA22FWJAJL10139001-1.jpg",
+            "./images/sub_page_img/CA22FWJAJL10139001/CA22FWJAJL10139001-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": false,
+        "isSales": true,
+        "isSalesRateValue": "30~50",
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSJAJL11129001",
+        "propertyNumber": 9,
+        "productNameKor": "몬트레이 셔츠 자켓 키위 원 워시드",
+        "productModelName": "MONTEREY SHIRT JAC",
+        "productColor": "green",
+        "productStyle": "shirt",
+        "price": 218000,
+        "priceRate": "150000~250000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSJAJL11129001/CA23SSJAJL11129001-1.jpg",
+            "./images/sub_page_img/CA23SSJAJL11129001/CA23SSJAJL11129001-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSSHSS11170001",
+        "propertyNumber": 10,
+        "productNameKor": "반팔 크래프트 셔츠 쥐라 린스드",
+        "productModelName": "S/S CRAFT SHIRT",
+        "productColor": "greenDown",
+        "productStyle": "shirt",
+        "price": 123000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSSHSS11170001/CA23SSSHSS11170001-1.jpg",
+            "./images/sub_page_img/CA23SSSHSS11170001/CA23SSSHSS11170001-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSSHSS11171001",
+        "propertyNumber": 11,
+        "productNameKor": "반팔 델레이 셔츠 아말피/왁스",
+        "productModelName": "S/S DELRAY SHIRT",
+        "productColor": "blue",
+        "productStyle": "shirt",
+        "price": 118000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSSHSS11171001/CA23SSSHSS11171001-1.jpg",
+            "./images/sub_page_img/CA23SSSHSS11171001/CA23SSSHSS11171001-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSSHSS11172001",
+        "propertyNumber": 12,
+        "productNameKor": "반팔 델레이 셔츠 피닉스/왁스",
+        "productModelName": "S/S DELRAY SHIRT",
+        "productColor": "orange",
+        "productStyle": "shirt",
+        "price": 118000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSSHSS11172001/CA23SSSHSS11172001-1.jpg",
+            "./images/sub_page_img/CA23SSSHSS11172001/CA23SSSHSS11172001-0.jpg"
+        ],
+        "isNew": true,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSSWCR00991001",
+        "propertyNumber": 13,
+        "productNameKor": "칼하트 스웻셔츠 그레이 헤더/블랙",
+        "productModelName": "CARHARTT SWEATSHIRT",
+        "productColor": "gray",
+        "productStyle": "sweater",
+        "price": 138000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSSWCR00991001/CA23SSSWCR00991001-1.jpg",
+            "./images/sub_page_img/CA23SSSWCR00991001/CA23SSSWCR00991001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSSWCR06655001",
+        "propertyNumber": 14,
+        "productNameKor": "칼하트 스웻셔츠 트리하우스/화이트",
+        "productModelName": "CARHARTT SWEATSHIRT",
+        "productColor": "greenDown",
+        "productStyle": "sweater",
+        "price": 138000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSSWCR06655001/CA23SSSWCR06655001-1.jpg",
+            "./images/sub_page_img/CA23SSSWCR06655001/CA23SSSWCR06655001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSSWCR11284001",
+        "propertyNumber": 15,
+        "productNameKor": "칼하트 스웻셔츠 루피너스/화이트",
+        "productModelName": "CARHARTT SWEATSHIRT",
+        "productColor": "purple",
+        "productStyle": "sweater",
+        "price": 138000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSSWCR11284001/CA23SSSWCR11284001-1.jpg",
+            "./images/sub_page_img/CA23SSSWCR11284001/CA23SSSWCR11284001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSSWCR11230001",
+        "propertyNumber": 16,
+        "productNameKor": "후디드 칼하트 스웻셔츠 키위/시트론",
+        "productModelName": "HOODED CARHARTT SWEATSHIRT",
+        "productColor": "green",
+        "productStyle": "sweater",
+        "price": 148000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSSWCR11230001/CA23SSSWCR11230001-1.jpg",
+            "./images/sub_page_img/CA23SSSWCR11230001/CA23SSSWCR11230001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSSWHO11200001",
+        "propertyNumber": 17,
+        "productNameKor": "후디드 로커 스웻셔츠 피닉스/블랙",
+        "productModelName": "HOODED LOCKER SWEATSHIRT",
+        "productColor": "orange",
+        "productStyle": "sweater",
+        "price": 153000,
+        "priceRate": "150000~250000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSSWHO11200001/CA23SSSWHO11200001-1.jpg",
+            "./images/sub_page_img/CA23SSSWHO11200001/CA23SSSWHO11200001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSSWCR11195001",
+        "propertyNumber": 18,
+        "productNameKor": "넬슨 스웻셔츠 피신 가먼트 다이드",
+        "productModelName": "NELSON SWEATSHIRT",
+        "productColor": "skyBlue",
+        "productStyle": "sweater",
+        "price": 163000,
+        "priceRate": "150000~250000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSSWCR11195001/CA23SSSWCR11195001-1.jpg",
+            "./images/sub_page_img/CA23SSSWCR11195001/CA23SSSWCR11195001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA22FWKNKC10174001",
+        "propertyNumber": 19,
+        "productNameKor": "앨비언 가디건 재스퍼 헤더",
+        "productModelName": "ALBION CARDIGAN",
+        "productColor": "brown",
+        "productStyle": "neat",
+        "price": 218000,
+        "priceRate": "150000~250000",
+        "imgSrc": [
+            "./images/sub_page_img/CA22FWKNKC10174001/CA22FWKNKC10174001-1.jpg",
+            "./images/sub_page_img/CA22FWKNKC10174001/CA22FWKNKC10174001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": true,
+        "isSalesRateValue": "30~50",
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSKNKP00040001",
+        "propertyNumber": 20,
+        "productNameKor": "코스트 스테이트 스웨터 화이트",
+        "productModelName": "COAST STATE SWEATER",
+        "productColor": "gray",
+        "productStyle": "neat",
+        "price": 185000,
+        "priceRate": "150000~250000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSKNKP00040001/CA23SSKNKP00040001-1.jpg",
+            "./images/sub_page_img/CA23SSKNKP00040001/CA23SSKNKP00040001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA22SSKNKP09357001",
+        "propertyNumber": 21,
+        "productNameKor": "매디슨 스웨터 아이시 워터/프로스티드 블루",
+        "productModelName": "MADISON SWEATER",
+        "productColor": "blue",
+        "productStyle": "neat",
+        "price": 95000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA22SSKNKP09357001/CA22SSKNKP09357001-1.jpg",
+            "./images/sub_page_img/CA22SSKNKP09357001/CA22SSKNKP09357001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": true,
+        "isSalesRateValue": "30~50",
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA22FWKNKP00104001",
+        "propertyNumber": 22,
+        "productNameKor": "스크립트 니트 베스트 내츄럴",
+        "productModelName": "SCRIPT KNIT VEST",
+        "productColor": "white",
+        "productStyle": "neat",
+        "price": 98000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA22FWKNKP00104001/CA22FWKNKP00104001-1.jpg",
+            "./images/sub_page_img/CA22FWKNKP00104001/CA22FWKNKP00104001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": true,
+        "isSalesRateValue": "30~50",
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSKNKP11280001",
+        "propertyNumber": 23,
+        "productNameKor": "알더스 니트 베스트 캐리비안 시",
+        "productModelName": "S/S ALDUS KNIT VEST",
+        "productColor": "skyBlue",
+        "productStyle": "neat",
+        "price": 113000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSKNKP11280001/CA23SSKNKP11280001-1.jpg",
+            "./images/sub_page_img/CA23SSKNKP11280001/CA23SSKNKP11280001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSKNKP00002002",
+        "propertyNumber": 24,
+        "productNameKor": "반팔 켄웨이 니트 폴로 블랙",
+        "productModelName": "S/S KENWAY KNIT POLO",
+        "productColor": "black",
+        "productStyle": "neat",
+        "price": 148000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSKNKP00002002/CA23SSKNKP00002002-1.jpg",
+            "./images/sub_page_img/CA23SSKNKP00002002/CA23SSKNKP00002002-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSTSSS11280001",
+        "propertyNumber": 25,
+        "productNameKor": "반팔 셀리 티셔츠 캐리비안 시",
+        "productModelName": "S/S CELLY T-SHIRT",
+        "productColor": "blue",
+        "productStyle": "TShirt",
+        "price": 85000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSTSSS11280001/CA23SSTSSS11280001-1.jpg",
+            "./images/sub_page_img/CA23SSTSSS11280001/CA23SSTSSS11280001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSTSSS00040026",
+        "propertyNumber": 26,
+        "productNameKor": "반팔 코스트 스테이트 티셔츠 화이트",
+        "productModelName": "S/S COAST STATE T-SHIRT",
+        "productColor": "white",
+        "productStyle": "TShirt",
+        "price": 98000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSTSSS00040026/CA23SSTSSS00040026-1.jpg",
+            "./images/sub_page_img/CA23SSTSSS00040026/CA23SSTSSS00040026-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSTSSS11234002",
+        "propertyNumber": 27,
+        "productNameKor": "반팔 히트 스크립트 티셔츠 아렌가",
+        "productModelName": "S/S HEAT SCRIPT T-SHIRT",
+        "productColor": "purple",
+        "productStyle": "TShirt",
+        "price": 75000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSTSSS11234002/CA23SSTSSS11234002-1.jpg",
+            "./images/sub_page_img/CA23SSTSSS11234002/CA23SSTSSS11234002-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSTSSS11190002",
+        "propertyNumber": 28,
+        "productNameKor": "반팔 매뉴얼 티셔츠 달리아 가먼트 다이드",
+        "productModelName": "S/S MANUAL T-SHIRT",
+        "productColor": "pink",
+        "productStyle": "TShirt",
+        "price": 93000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSTSSS11190002/CA23SSTSSS11190002-1.jpg",
+            "./images/sub_page_img/CA23SSTSSS11190002/CA23SSTSSS11190002-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSTSSS11110001",
+        "propertyNumber": 29,
+        "productNameKor": "반팔 뉴 프론티어 티셔츠 버팔로",
+        "productModelName": "S/S NEW FRONTIER T-SHIRT",
+        "productColor": "brown",
+        "productStyle": "TShirt",
+        "price": 78000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSTSSS11110001/CA23SSTSSS11110001-1.jpg",
+            "./images/sub_page_img/CA23SSTSSS11110001/CA23SSTSSS11110001-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    },
+    {
+        "id": "CA23SSTSSS00002018",
+        "propertyNumber": 30,
+        "productNameKor": "반팔 팜 스크립트 티셔츠 블랙",
+        "productModelName": "S/S PALM SCRIPT T-SHIRT",
+        "productColor": "black",
+        "productStyle": "TShirt",
+        "price": 75000,
+        "priceRate": "50000~150000",
+        "imgSrc": [
+            "./images/sub_page_img/CA23SSTSSS00002018/CA23SSTSSS00002018-1.jpg",
+            "./images/sub_page_img/CA23SSTSSS00002018/CA23SSTSSS00002018-0.jpg"
+        ],
+        "isNew": false,
+        "isBest": false,
+        "isSales": false,
+        "isSoldOut": false,
+        "isGender": "male"
+    }
+]

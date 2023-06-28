@@ -82,7 +82,7 @@ export default function ProductList() {
         {bestproArray.map((object) => {
             return (
               <SwiperSlide className="best_product_list product_list" onClick={() => {
-                navigate(`/subpage/:${object.clothCategory}`);
+                navigate(`/subpage`);
               }} key={object.id}>
                   <img src = {process.env.PUBLIC_URL + object.src}/>
                   <span className="product_info product_model_name">{object.modelName}</span>
@@ -103,7 +103,7 @@ export default function ProductList() {
         {newproArray.map((object) => {
             return (
               <SwiperSlide className="new_product_list product_list" onClick={() => {
-                navigate(`/subpage/:${object.clothCategory}`);
+                navigate(`/subpage`);
               }} key={object.id}>
                   <img src = {process.env.PUBLIC_URL + object.src}/>
                   <span className="product_info product_model_name">{object.modelName}</span>

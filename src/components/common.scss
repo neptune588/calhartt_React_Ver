@@ -69,6 +69,11 @@ $font_perment_marker : 'Permanent Marker';
     box-sizing: border-box;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 li {
     list-style: none;
 }
@@ -78,9 +83,9 @@ a {
     color: inherit;
 }
 
-html {
+html, body {
     font-size: 10px;
-    background-color: $main_color_flora_white;
+    background-color: $main_color_flora_white !important;
 }
 
 img {
@@ -108,4 +113,9 @@ img {
     &:hover {
         color: #ffbf00 !important;
     }
+}
+
+button {
+    border: none;
+    outline: none;
 }

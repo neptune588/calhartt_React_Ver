@@ -24,14 +24,18 @@ export default function IssueContents() {
         id: 'hoverImg01',
         className: 'hover_img hover_img01',
         src:  process.env.PUBLIC_URL + 'images/look_book_0_cloth01.png',
-        handleMouseOver : () => setShowText(0),
+        handleMouseOver : (index) => {
+          return () => {setShowText(index)};
+        },
         handleMouseOut : () => setShowText(''),
       },
       {
         id: 'hoverImg02',
         className: 'hover_img hover_img02',
         src:  process.env.PUBLIC_URL + 'images/look_book_0_cloth02.png',
-        handleMouseOver : () => setShowText(1),
+        handleMouseOver : (index) => {
+          return () => {setShowText(index)};
+        },
         handleMouseOut : () => setShowText(''),
       },
     ],
@@ -40,21 +44,27 @@ export default function IssueContents() {
         id: 'hoverImg04',
         className: 'hover_img hover_img01',
         src:  process.env.PUBLIC_URL + 'images/look_book_1_cloth01.png',
-        handleMouseOver : () => setShowText(0),
+        handleMouseOver : (index) => {
+          return () => {setShowText(index)};
+        },
         handleMouseOut : () => setShowText(''),
       },
       {
         id: 'hoverImg05',
         className: 'hover_img hover_img02',
         src:  process.env.PUBLIC_URL + 'images/look_book_1_cloth02.png',
-        handleMouseOver : () => setShowText(1),
+        handleMouseOver : (index) => {
+          return () => {setShowText(index)};
+        },
         handleMouseOut : () => setShowText(''),
       },
       {
         id: 'hoverImg06',
         className: 'hover_img hover_img03',
         src:  process.env.PUBLIC_URL + 'images/look_book_1_cloth03.png',
-        handleMouseOver : () => setShowText(2),
+        handleMouseOver : (index) => {
+          return () => {setShowText(index)};
+        },
         handleMouseOut : () => setShowText(''),
       },
     ],
@@ -63,28 +73,36 @@ export default function IssueContents() {
         id: 'hoverImg07',
         className: 'hover_img hover_img01',
         src:  process.env.PUBLIC_URL + 'images/look_book_2_cloth01.png',
-        handleMouseOver : () => setShowText(0),
+        handleMouseOver : (index) => {
+          return () => {setShowText(index)};
+        },
         handleMouseOut : () => setShowText(''),
       },
       {
         id: 'hoverImg08',
         className: 'hover_img hover_img02',
         src:  process.env.PUBLIC_URL + 'images/look_book_2_cloth02.png',
-        handleMouseOver : () => setShowText(1),
+        handleMouseOver : (index) => {
+          return () => {setShowText(index)};
+        },
         handleMouseOut : () => setShowText(''),
       },
       {
         id: 'hoverImg09',
         className: 'hover_img hover_img03',
         src:  process.env.PUBLIC_URL + 'images/look_book_2_cloth03.png',
-        handleMouseOver : () => setShowText(2),
+        handleMouseOver : (index) => {
+          return () => {setShowText(index)};
+        },
         handleMouseOut : () => setShowText(''),
       },
       {
         id: 'hoverImg10',
         className: 'hover_img hover_img04',
         src:  process.env.PUBLIC_URL + 'images/look_book_2_cloth04.png',
-        handleMouseOver : () => setShowText(3),
+        handleMouseOver : (index) => {
+          return () => {setShowText(index)};
+        },
         handleMouseOut : () => setShowText(''),
       },
     ],
@@ -94,6 +112,7 @@ export default function IssueContents() {
   //console.log(hoverSection01, hoverSection02, hoverSection03);
 
   const textObject = {
+
     hoverSection01Txt : [
       {
         id: 'hoverText01',
@@ -110,6 +129,7 @@ export default function IssueContents() {
         textPrice: 168000,
       },
     ],
+
     hoverSection02Txt : [
       {
         id: 'hoverText03',
@@ -133,6 +153,7 @@ export default function IssueContents() {
         textPrice: 138000,
       },
     ],
+
     hoverSection03Txt : [
       {
         id: 'hoverText06',
@@ -164,6 +185,7 @@ export default function IssueContents() {
       },
     ]
   }
+  
   const {hoverSection01Txt, hoverSection02Txt, hoverSection03Txt} = textObject;
 
 
@@ -178,9 +200,9 @@ export default function IssueContents() {
         <div className="view_icon02 v_icon">
           <FontAwesomeIcon icon={faLocationArrow} />
         </div>
-        {hoverSection01Img.map((object) => {
+        {hoverSection01Img.map((object, index) => {
           return (
-              <div key={object.id} className={object.className} onMouseOver={object.handleMouseOver} onMouseOut={object.handleMouseOut}>
+              <div key={object.id} className={object.className} onMouseOver={object.handleMouseOver(index)} onMouseOut={object.handleMouseOut}>
                 <img src={object.src} alt={object.src}/>
               </div>
           )
@@ -211,9 +233,9 @@ export default function IssueContents() {
           <FontAwesomeIcon icon={faLocationArrow} />
         </div>
 
-        {hoverSection02Img.map((object) => {
+        {hoverSection02Img.map((object, index) => {
           return (
-            <div key={object.id} className={object.className} onMouseOver={object.handleMouseOver} onMouseOut={object.handleMouseOut}>
+            <div key={object.id} className={object.className} onMouseOver={object.handleMouseOver(index)} onMouseOut={object.handleMouseOut}>
               <img src={object.src} alt={object.src}/>
             </div>
           )
@@ -246,9 +268,9 @@ export default function IssueContents() {
           <FontAwesomeIcon icon={faLocationArrow} />
         </div>
 
-        {hoverSection03Img.map((object) => {
+        {hoverSection03Img.map((object, index) => {
           return (
-            <div key={object.id} className={object.className} onMouseOver={object.handleMouseOver} onMouseOut={object.handleMouseOut}>
+            <div key={object.id} className={object.className} onMouseOver={object.handleMouseOver(index)} onMouseOut={object.handleMouseOut}>
               <img src={object.src} alt={object.src}/>
             </div>
           )

@@ -71,56 +71,64 @@
             "modelName": "SALEDO JACKET",
             "name": "BLACK LIGHT USED WASH",
             "price": 245000,
-            "src": "/images/np_01.jpg"
+            "src": "/images/np_01.jpg",
+            "clothCategory": "top"
         },
         {
             "id": "np02",
             "modelName": "SALEDO JACKET",
             "name": "BLUE STONE WASHED",
             "price": 208000,
-            "src": "/images/np_02.jpg"
+            "src": "/images/np_02.jpg",
+            "clothCategory": "top"
         },
         {
             "id": "np03",
             "modelName": "COASTAL PANT",
             "name": "WHITE/BLACK",
             "price": 173000,
-            "src": "/images/np_03.jpg"
+            "src": "/images/np_03.jpg",
+            "clothCategory": "bottom"
         },
         {
             "id": "np04",
             "modelName": "DOUBLE KNEE PANT FAIRFIELD",
             "name": "BLUE HEAVY STONE WASH",
             "price": 173000,
-            "src": "/images/np_04.jpg"
+            "src": "/images/np_04.jpg",
+            "clothCategory": "bottom"
         },
         {
             "id": "np05",
             "modelName": "ISLAND SWIM TRUNKS",
             "name": "KIWI/BLACK",
             "price": 108000,
-            "src": "/images/np_05.jpg"
+            "src": "/images/np_05.jpg",
+            "clothCategory": "bottom"
         },
         {
             "id": "np06",
             "modelName": "ISLAND SWIM TRUNKS",
             "name": "MARINA PRINT, ATOM BLUE/WHITE",
             "price": 123000,
-            "src": "/images/np_06.jpg"
+            "src": "/images/np_06.jpg",
+            "clothCategory": "bottom"
         },
         {
             "id": "np07",
             "modelName": "DELRAY CAP",
             "name": "WALL/CITRON",
             "price": 78000,
-            "src": "/images/np_07.jpg"
+            "src": "/images/np_07.jpg",
+            "clothCategory": "acc"
         },
         {
             "id": "np08",
             "modelName": "SIBERIAN PARKA KEYCHAIN",
             "name": "GOLD",
             "price": 33000,
-            "src": "/images/np_08.jpg"
+            "src": "/images/np_08.jpg",
+            "clothCategory": "acc"
         }
     ]
 }

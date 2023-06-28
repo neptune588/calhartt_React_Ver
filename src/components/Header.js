@@ -66,7 +66,7 @@ export default function Header() {
           
           <Nav className="lnb">
             {subMenuArray.map((object) => {
-              return <Nav.Link className='sub_menu' key={`${object.id}`} onClick={() => {navigate(`/subpage/:${object.Linkname}`)}}>{object.name}</Nav.Link>
+              return <Nav.Link className='sub_menu' key={`${object.id}`} onClick={() => {navigate(`/subpage`)}}>{object.name}</Nav.Link>
             })}
           </Nav>
           <Form className="d-flex search_area">

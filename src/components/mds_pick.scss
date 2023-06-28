@@ -1,1 +1,60 @@
 @import 'common.scss';
+
+.mds_pick {
+    @include box_array;
+    margin-bottom: 40px;
+
+    ul {
+        display: flex;
+        li {
+            @include item_size(195px, 400px);
+            cursor: pointer;
+            margin-right: 15px;
+            overflow: hidden !important;
+            transition: all 0.5s;
+            img {
+                width: 100%; height: 100% !important;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &.acodian_on {
+                position: relative;
+                @include item_size(615px, 400px);
+                    img {
+                        width: 100%; height: 100%;
+                    }
+                .product_info {
+                    position: absolute;
+                    width: 280px;
+                    height: 400px;
+                    padding: 40px 20px;
+                    top: 0; right: 0;
+                    z-index: 10;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    transition: all 0.8s;
+                    p {
+                        &:nth-child(5) {
+                            margin-bottom: 0 !important;
+                        }
+                    }
+                    .buy_button {
+                        display: inline-block;
+                        margin-top: 20px;
+                        padding: 10px 25px;
+                        font-size: $small_up_font_size;
+                        font-family: $font_noto_sans;
+                        letter-spacing: -0.8px;
+                        background-color: #ffbf00;
+                        border-radius: 5px;
+                        transition: all 0.2s;
+                        &:hover {
+                            background-color: #4136BF;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

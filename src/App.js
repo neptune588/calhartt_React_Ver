@@ -5,6 +5,9 @@ import {Routes, Route} from 'react-router-dom';
 
 import Header from './components/Header.js';
 import Main from './pages/Main.js';
+import Sub from './pages/Sub.js';
+import Detail from './pages/Detail.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -15,10 +18,15 @@ function App() {
         <Route path="/" element = {
           <Main/>
         }/>
-        <Route path="subPage" element = {
-          <div>서브페이지입니다.</div>
+        <Route path="subpage" element = {
+          <Sub/>
+        }/>
+        <Route path="detail/:id" element = {
+          <Detail/>
         }/>
       </Routes>
+
+      <Footer/>
     </>
   );
 }
