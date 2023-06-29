@@ -10,8 +10,7 @@ import './detail_list.scss';
 
 export default function DetailList() {
 
-    const maxStars = 5;
-    const immunMinStars = 0;
+    const maxStarCount = 5;
 
     //데이터 받아와서 저장하는 배열
     const [productArray, setProductArray] = useState([]);
@@ -23,20 +22,7 @@ export default function DetailList() {
     const [reviewArray, setReviewArray] = useState({});
 
     //별점 카운트
-    const [curRatingStar, setCurRatingStar] = useState(
-        {
-            fasStarCount: Array(immunMinStars).fill(''), 
-            farStarCount: Array(maxStars - immunMinStars).fill(''), 
-/*             handleClick: (count = 0) => {
-                return () => {
-                    minStars = count + 1;
-
-                    setCurRatingStar({...curRatingStar, fasStarCount : Array(minStars).fill('')});
-                    setCurRatingStar({...curRatingStar, farStarCount : Array(maxStars - minStars).fill('')});
-                }
-            }, */
-        }
-    );
+    const [curRatingStar, setCurRatingStar] = useState(Array(maxStarCount).fill({id: 'starNum', boolean: false}));
     
     //리뷰 박스 on/off
     const [reviewBox, setReviewBox] = useState(false);
@@ -70,7 +56,7 @@ export default function DetailList() {
             setStarArray(
                     {
                         fasStars : Array(productArray[nowIndex].isRating).fill(''), 
-                        farStars : Array(maxStars - productArray[nowIndex].isRating).fill('')
+                        farStars : Array(maxStarCount - productArray[nowIndex].isRating).fill('')
                     }
                 );
         }
@@ -81,25 +67,30 @@ export default function DetailList() {
         return <div>로딩중</div>
     }
 
-
-    function handleStarClick(starCount) {
+    
+    function handleChangeBool(nowIndex = 0) {
         return () => {
-            let minStars = starCount + 1;
+            const star = [];
 
-            setCurRatingStar({...curRatingStar, fasStarCount : Array(minStars).fill('')});
-            setCurRatingStar({...curRatingStar, farStarCount : Array(maxStars - minStars).fill('')});
-            console.log(curRatingStar, minStars);
-        }
+            curRatingStar.forEach((object) => {
+                star.push({...object, boolean: false})
+            })
+
+            star.map((object, index) => {
+                //이말인즉슨 내가 누른 별까지만 true로 바뀐다 , true일떄는 채움 별 반환 즉, 내가 누른 인덱스만큼 별이 채워지게 됨.
+                //유즈스테이트로 만든것에만 불변성유지해주면될듯?
+                if(index <= nowIndex) {
+                    object.boolean =  true;
+                } else {
+                    object.boolean =  false;
+                }
+            });
+
+            //console.log(star);
+
+            setCurRatingStar(star);
+        }   
     }
-
-    //배열2개를 맵으로 돌린다.
-
-/*     const maxStars = 5;
-
-    let fasStarLength = starArray.length;
-    let farStarLength = maxStars - starArray.length; */
-
-    //console.log(productArray, id);
 
     return (
         <>
@@ -169,7 +160,7 @@ export default function DetailList() {
                                 </>  
                                 : ''}
                             </div>
-                            <span className="current_rating">{myObject.isRating.toFixed(1)}/{maxStars.toFixed(1)}</span>
+                            <span className="current_rating">{myObject.isRating.toFixed(1)}/{maxStarCount.toFixed(1)}</span>
                         </section>
                         <ul className="sns_list">
                             <li className="like">
@@ -250,7 +241,7 @@ export default function DetailList() {
             <div className="info_container">
                 <section id="product_details_section">
                     <ul className="info_tab_list">
-                        <li class="tab_on"><a href="#product_details_section">상세정보</a></li>
+                        <li className="tab_on"><a href="#product_details_section">상세정보</a></li>
                         <li><a href="#product_reviews_section">상품후기</a></li>
                         <li><a href="#qna_section">상품문의</a></li>
                         <li><a href="#product_shipping_notice_section">배송안내</a></li>
@@ -321,20 +312,13 @@ export default function DetailList() {
                                         /최대 100자
                                     </div>
                                     <ul className="review_rating_star">
-                                        {
-                                            <>
-                                                {curRatingStar.fasStarCount.map(() => {
-                                                    return <li><FontAwesomeIcon icon={fasStar} /></li>
-                                                })}
-                                                {curRatingStar.farStarCount.map((value, index) => {
-                                                    return <li onClick={handleStarClick(index)}><FontAwesomeIcon icon={farStar} /></li>
-                                                })}
-                                            </>
-                                        }
+                                        {curRatingStar.map((object, index) => {
+                                            return <li onClick={handleChangeBool(index)}>{object.boolean === true ? <FontAwesomeIcon icon={fasStar}/>:<FontAwesomeIcon icon={farStar}/>}</li>
+                                        })}
                                     </ul>
                                 </div>
                                 <div className="review_notice_ment nt_ment"></div>
-                                <textarea id="review_text_box" cols="10" rows="4" maxlength="100"></textarea>
+                                <textarea id="review_text_box" cols={10} rows={4} maxLength={100}></textarea>
                                 <button id="create_complete" className="blue_btn" type="button">작성완료</button>
                             </div>
                         </form>
@@ -358,8 +342,8 @@ export default function DetailList() {
                     <form action="" id="qna_form">
                         <div className="create_question">
                             <div className="create_question_top">
-                                <label htmlfor="qna_user_id">ID</label>
-                                <input id="qna_user_id" type="text" maxlength="12" placeholder="최대 12자" />
+                                <label htmlFor="qna_user_id">ID</label>
+                                <input id="qna_user_id" type="text" maxLength={12} placeholder="최대 12자" />
                             </div>
                             <div className="str_length">
                                 현재
@@ -368,7 +352,7 @@ export default function DetailList() {
                                 /최대 100자
                             </div>
                             <div className="qna_notice_ment nt_ment"></div>
-                            <textarea id="create_question_ment" cols="10" rows="4" maxlength="150"></textarea>
+                            <textarea id="create_question_ment" cols={10} rows={4} maxLength={150}></textarea>
                             <div id="qna_create" className="blue_btn">문의 작성완료</div>
                         </div>
                         <p className="total_info">전체 (총 <span className="qna_couting">1</span>건)</p>
@@ -384,15 +368,11 @@ export default function DetailList() {
                                         <span className="qna_id list_view_id">je*****</span>
                                     </div>
                                 </div>
-                                <div className="answer_box">
+                                <div className="answer_box block_on">
                                     <div className="ment_input">
                                         <h2>[CARHARTT] 관리자</h2>
-                                        <textarea className="answer_text_box" cols="10" rows="4" maxlength="200"></textarea>
-                                        <button className="answer_create blue_btn">
-                                            답변하기
-                                        </button>
                                     </div>
-                                        <div className="ment_area">
+                                    <div className="ment_area">
                                         <span className="answer">답변</span>
                                         <div className="qna_guide_ment">
                                             <p className="spot"><span></span>{"[CARHARTT] 관리자"}</p>
@@ -408,7 +388,7 @@ export default function DetailList() {
                     </form>
                 </section>
                 <section id="product_shipping_notice_section">
-                    <ul class="info_tab_list">
+                    <ul className="info_tab_list">
                         <li>상세정보</li>
                         <li>상품후기</li>
                         <li>상품문의</li>
