@@ -49,19 +49,19 @@ export default function Header() {
     },
   ];
 
-  useEffect(() => {
+/*   useEffect(() => {
     console.log('헤더 컴포넌트 렌더완료');
 
     return () => {
       console.log('정리 완료');
     }
-  }, []);
+  }, []); */
 
   return (
       <Navbar className="nav_ex" bg="dark" data-bs-theme="dark">
         <Container className="nav">
           <Navbar.Brand className="main_logo" onClick={() => {navigate('/')}}>
-            <img src = {process.env.PUBLIC_URL + `images/main_logo.png`} alt="main_logo"/>
+            <img src = {process.env.PUBLIC_URL + `/images/main_logo.png`} alt="main_logo"/>
           </Navbar.Brand>
           
           <Nav className="lnb">

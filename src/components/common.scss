@@ -62,6 +62,13 @@ $font_perment_marker : 'Permanent Marker';
     margin: 0 auto;
 }
 
+/************************* blue_btn  ***************************/
+@mixin blue_btn($font_size) {
+    background-color: $sub_color_free_speach_blue;
+    color: white;
+    font-size: $font_size;
+}
+
 /************************* defalut_settings ***************************/
 * {
     margin: 0;
@@ -118,4 +125,9 @@ img {
 button {
     border: none;
     outline: none;
+}
+
+/************************* control_class ***************************/
+.block_on {
+    display: block !important;
 }

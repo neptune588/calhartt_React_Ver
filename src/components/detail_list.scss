@@ -6,6 +6,10 @@ ul, p {
     padding: 0;
 }
 
+input {
+    display: none;
+}
+
 .contents_product_buy {
     display: flex;
     @include box_array;
@@ -46,10 +50,6 @@ ul, p {
                 background-repeat: no-repeat;
             }
 
-            &:hover {
-                cursor: crosshair;
-            }
-
             .view_img01 {
                 position: absolute;
                 top: 0;
@@ -57,12 +57,10 @@ ul, p {
                 opacity: 1;
                 transition: all 0.2s;
 
-                &:hover {
-                    opacity: 0;
+                img {
+                    @include item_size(100%, 100%);
+                    object-fit: cover;
                 }
-            }
-
-            .view_img02 {
             }
         }
 
@@ -363,11 +361,6 @@ ul, p {
                 font-family: $font_noto_sans;
                 font-size: $defalut_font_size;
                 font-weight: 700;
-
-                i {
-                    font-size: 20px;
-                    margin-right: 15px;
-                }
             }
         }
 
@@ -402,5 +395,503 @@ ul, p {
                 }
             }
         }
+    }
+}
+
+#etc_img {
+    @include box_array;
+    img {
+        @include item_size(100%, 100%);
+        object-fit: cover;
+    }
+}
+
+/************************* info_container ***************************/
+.info_container {
+    @include box_array;
+    #product_details_section {
+        .product_detail_info {
+            display: flex;
+            p {
+                font-size: $small_up_font_size !important;
+                .model_name {
+                    font-weight: 700;
+                }
+            }
+            .product_select_img {
+                margin-right: 15px;
+                border: 1px solid black;
+                img {
+                    cursor: pointer;
+                    @include item_size(200px, 200px);
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    #product_reviews_section {
+        .product_reviews_area {
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .best_review_btn {
+                @include item_size(210px, 40px);
+            }
+
+            #review_form {
+                .review_list {
+                    margin: 20px 0;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .review_ment {
+                            width: 65%;
+                            margin-left: 15px;
+
+                            .delete {
+                                margin-left: 15px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .right_info {
+                            display: flex;
+                            
+                            span {
+                                margin-right: 50px;
+                            }
+
+                            .rating_star {
+                                display: flex;
+                                color: $point_color_amber;
+                                letter-spacing: -0.8px;
+                                margin-right: 50px;
+                                li {
+                                    padding: 0 !important;
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .not_ment {
+                        font-family: $font_noto_sans;
+                        text-align: center;
+                        font-size: 30px;
+                        background-color: #fff;
+                        height: 200px;
+                        line-height: 200px;
+                    }
+                }
+
+                .create_btn {
+                    margin-left: auto;
+                    user-select: none;
+                    @include item_size(105px, 40px);
+                }
+
+                .review_create {
+                    display: none;
+                    margin-top: 20px;
+
+                    .text_top_area {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 15px;
+
+                        .str_length {
+                            font-family: $font_noto_sans;
+                            font-size: $small_up_font_size;
+                        }
+
+                        .review_rating_star {
+                            display: flex;
+                            margin-left: 15px;
+                            align-items: center;
+                            background-color: #fff;
+                            border: 2px solid black;
+                            padding: 5px 10px;
+                            font-size: 20px;
+                            color: $sub_color_free_speach_blue;
+
+                            li {
+                                margin-right: 5px;
+                                cursor: pointer;
+
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                    #review_text_box {
+                        width: 100%;
+                        padding: 20px;
+                        background-color: #fff;
+                        outline: none;
+                        border: 1px solid #bbbbbb;
+                        resize: none;
+                    }
+
+                    #create_complete {
+                        display: block;
+                        text-align: center;
+                        @include item_size(195px, 40px);
+                        line-height: 40px;
+                        margin-top: 20px;
+                        margin-left: auto;
+                    }
+                }
+            }
+
+
+        }
+    }
+    
+    #qna_section {
+        .qna_notice {
+            margin-bottom: 10px;
+
+            .guide_01 {
+                text-align: center;
+                font-family: $font_noto_sans;
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+            .guide_02 {
+                font-size: 20px;
+                font-family: $font_noto_sans;
+                text-align: center;
+                color: rgb(119, 119, 119);
+                margin-bottom: 15px;
+
+                span {
+                    color: $sub_color_free_speach_blue;
+                    font-weight: 700;
+                }
+            }
+
+            .question_btn {
+                @include item_size(195px, 60px);
+                margin: 0 auto;
+                border: 3px solid $sub_color_free_speach_blue;
+                @include sub_title;
+                text-align: center;
+                color: $sub_color_free_speach_blue;
+                line-height: 60px;
+
+            }
+        }
+
+        #qna_form {
+            .create_question {
+                display: none;
+                margin-bottom: 30px;
+
+                .create_question_top {
+                    display: flex;
+                    align-items: center;
+
+                    label {
+                        font-size: $defalut_font_size;
+                        font-family: $font_noto_sans;
+                        margin-right: 10px;
+                    }
+
+                    #qna_user_id {
+                        padding: 5px 10px;
+                    }
+                }
+
+                .str_length {
+                    margin: 15px 0;
+                    font-family: $font_noto_sans;
+                    font-size: $small_up_font_size;
+                }
+
+                #create_question_ment {
+                    width: 100%;
+                    padding: 20px;
+                    resize: none;
+                    outline: none;
+                    border: 1px solid #bbbbbb;
+                }
+
+                #qna_create {
+                    margin-top: 15px;
+                }
+
+                input {
+                    display: block;
+                    outline: none;
+                    border: 1px solid #bbbbbb;
+                }
+            }
+
+            .qna {
+                .question_list {
+                    padding: 0;
+                    &.answer_complete {
+                        cursor: pointer;
+                    }
+                    .question_box {
+                        overflow: hidden;
+                        padding: 30px 0;
+                        user-select: none;
+
+                        .left_box {
+                            display: flex;
+                            width: 70%;
+                            float: left;
+
+                            span {
+                                display: inline-block;
+                                margin-left: 15px;
+                            }
+
+                            p {
+                                margin-left: 40px;
+                                text-align: center;
+                            }
+                            .qna_ment {
+                                display: flex;
+                                .qna_list_delete {
+                                    cursor: pointer;
+                                }
+    
+                                .manager_ment_on {
+                                    display: none;
+                                    margin-left: 25px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        .right_box {
+                            width: 30%;
+                            float: right;
+
+                            span {
+                                width: 100px;
+                                display: inline-block;
+                                margin-right: 50px;
+                                text-align: center;
+                                &.date {
+                                    width: 120px;
+                                }
+                                &.comment_click_on {
+                                    width: 50px;
+                                    margin-right: 0;
+                                }
+                            }
+
+                            i {
+                                font-size: 20px;
+                                cursor: pointer;
+
+                            }
+                        }
+
+                        .delete {
+                            margin-left: 15px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .answer_box {
+                        display: none;
+
+                        .ment_input {
+                            >h2 {
+                                font-size: $defalut_font_size;
+                                font-family: $font_noto_sans;
+                                margin: 10px 0;
+                            }
+
+                            .answer_text_box {
+                                width: 100%;
+                                padding: 10px;
+                                resize: none;
+                                outline: none;
+                                border: 1px solid #bbbbbb;
+                            }
+
+                            .answer_create {
+                                display: block;
+                                @include item_size(210px, 40px);
+                                margin: 15px 0 20px;
+                                margin-left: auto;
+                            }
+                        }
+                    }
+                    .ment_area {
+                        display: flex;
+                        align-items: center;
+                        padding: 20px 0;
+                        font-size: $defalut_font_size;
+                        border-top: 1px solid #bbbbbb;
+                        .answer {
+                            margin-left: 15px;
+                            font-size: $small_up_font_size;
+                        }
+                        .qna_guide_ment {
+                            width: 90%;
+                            margin-left: 50px;
+                            font-size: $small_up_font_size;
+                            .spot {
+                                font-size: 1.6rem;
+                                font-family: "Noto Sans KR", sans-serif;
+                            }
+                        }
+                    }
+                }
+
+                .qna_not_ment {
+                    font-family: $font_noto_sans;
+                    text-align: center;
+                    font-size: 30px;
+                    background-color: #fff;
+                    height: 200px;
+                    line-height: 200px;
+                }
+            }
+        }
+
+        .total_info {
+            margin-bottom: 30px;
+        }
+    }
+
+    .info_tab_list {
+        display: flex;
+        margin: 30px 0;
+
+        li {
+            @include item_size(20%, 50px);
+            line-height: 50px;
+            font-size: 20px;
+            line-height: 50px;
+            font-weight: 700;
+            background-color: #dddddd;
+            border: 1px solid gray;
+            border-right: none;
+            text-align: center;
+            letter-spacing: -1px;
+
+            &.tab_on {
+                background-color: $point_color_amber;
+            }
+
+            &:last-child {
+                border-right: 1px solid gray;
+            }
+        }
+    }
+
+    .total_info {
+        font-size: $defalut_font_size;
+    }
+
+    .list_area {
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+
+        li {
+            padding: 30px 0;
+            border-bottom: 1px solid darkgray;
+            font-size: $small_up_font_size;
+
+            &:last-child {
+                border: none;
+            }
+
+            .date {
+                font-size: $small_font_size;
+                color: rgb(54, 54, 54);
+            }
+        }
+    }
+
+    .pagenation {
+        margin: 15px 0;
+
+        .page_list {
+            display: flex;
+            justify-content: center;
+
+            li {
+                color: white;
+                margin-right: 10px;
+                font-size: $defalut_font_size;
+                background-color: gray;
+                @include item_size(30px, 30px);
+                line-height: 30px;
+                cursor: pointer;
+                user-select: none;
+                text-align: center;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.page_on {
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+    .ment_box {
+        margin-bottom: 20px;
+
+        p {
+            font-size: $small_font_size;
+            letter-spacing: -0.5px;
+            margin-bottom: 5px;
+        }
+
+        .color_gray {
+            font-size: $small_font_size;
+        }
+    }
+
+    .more {
+        display: inline-block;
+        font-size: $small_up_font_size;
+        font-weight: 700;
+        border-bottom: 1px solid #000;
+        margin-bottom: 15px;
+
+        span {
+            margin-right: 5px;
+        }
+    }
+
+    .blue_btn {
+        text-align: center;
+        @include blue_btn($small_up_font_size);
+        cursor: pointer;
+        line-height: 40px;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: $point_color_amber;
+        }
+    }
+
+    .nt_ment {
+        margin: 15px 0;
+        text-align: center;
+        color: red;
+        font-size: $small_up_font_size;
+        font-family: $font_noto_sans;
     }
 }
