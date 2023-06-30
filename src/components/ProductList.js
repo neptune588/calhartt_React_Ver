@@ -27,7 +27,7 @@ export default function ProductList() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch( process.env.PUBLIC_URL + '/productDB.json' )
+    fetch( process.env.PUBLIC_URL + '/subProductDB.json' )
     .then((res) => {
       return res.json();
     })
@@ -82,11 +82,11 @@ export default function ProductList() {
         {bestproArray.map((object) => {
             return (
               <SwiperSlide className="best_product_list product_list" onClick={() => {
-                navigate(`/subpage`);
+                navigate(`/detail/${object.id}`);
               }} key={object.id}>
-                  <img src = {process.env.PUBLIC_URL + object.src}/>
-                  <span className="product_info product_model_name">{object.modelName}</span>
-                  <span className="product_info product_name">{object.name}</span>
+                  <img src = {process.env.PUBLIC_URL + object.imgSrc[0]}/>
+                  <span className="product_info product_model_name">{object.productModelName}</span>
+                  <span className="product_info product_name">{object.productName}</span>
               </SwiperSlide> 
             )
         })}
@@ -103,11 +103,11 @@ export default function ProductList() {
         {newproArray.map((object) => {
             return (
               <SwiperSlide className="new_product_list product_list" onClick={() => {
-                navigate(`/subpage`);
+                navigate(`/detail/${object.id}`);
               }} key={object.id}>
-                  <img src = {process.env.PUBLIC_URL + object.src}/>
-                  <span className="product_info product_model_name">{object.modelName}</span>
-                  <span className="product_info product_name">{object.name}</span>
+                  <img src = {process.env.PUBLIC_URL + object.imgSrc[0]}/>
+                  <span className="product_info product_model_name">{object.productModelName}</span>
+                  <span className="product_info product_name">{object.productName}</span>
               </SwiperSlide> 
             )
         })}

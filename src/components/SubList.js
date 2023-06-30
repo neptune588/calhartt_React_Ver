@@ -15,9 +15,9 @@ export default function SubList() {
     const navigate = useNavigate();    
 
     useEffect(() => {
-        fetch('./subProductDB.json')
+        fetch( process.env.PUBLIC_URL + './subProductDB.json' )
         .then(res => res.json())
-        .then(data => setSubProductLi(data))
+        .then(data => setSubProductLi(data.productList))
         .catch(error => console.log(error));     
     },[]);
     

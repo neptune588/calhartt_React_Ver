@@ -2,7 +2,7 @@ import { React, useEffect, useState, useRef} from 'react'
 import { styled } from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './insta_gram.scss';
+import './instagram.scss';
 
 const SubTitle = styled.h2`
     font-size: 2rem;

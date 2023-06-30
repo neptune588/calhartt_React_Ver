@@ -181,7 +181,7 @@ input {
                 }
                 .product_select_area {
                     overflow: hidden;
-                    input {
+/*                     input {
                         float: left;
                         @include item_size(50px, 30px);
                         padding: 0 5px;
@@ -193,7 +193,21 @@ input {
                         text-align: center;
                         font-size: $small_up_font_size;
                         font-family: $font_noto_sans;
+                    } */
+                    span {
+                        float: left;
+                        @include item_size(50px, 30px);
+                        line-height: 30px;
+                        padding: 0 5px;
+                        display: block !important;
+                        outline: none;
+                        border: 1px solid #bbbbbb;
+                        border-left: none;
+                        border-right: none;
+                        text-align: center;
+                        font-size: 1.4rem;
                     }
+
                     .quantity_btn{
                         float: left;
                         display: block;
@@ -538,6 +552,7 @@ input {
                         outline: none;
                         border: 1px solid #bbbbbb;
                         resize: none;
+                        font-size: $small_up_font_size;
                     }
 
                     #create_complete {

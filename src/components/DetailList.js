@@ -1,8 +1,8 @@
-import { React , useEffect, useState } from 'react'
+import { React , useEffect, useState, useRef } from 'react'
 import { useParams } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faChevronLeft, faChevronRight, faStar as fasStar} from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faChevronLeft, faChevronRight, faStar as fasStar, faWindowClose} from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 import { faTwitter, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
@@ -11,6 +11,7 @@ import './detail_list.scss';
 export default function DetailList() {
 
     const maxStarCount = 5;
+    const reviewMaxLength = 100;
 
     //데이터 받아와서 저장하는 배열
     const [productArray, setProductArray] = useState([]);
@@ -19,10 +20,16 @@ export default function DetailList() {
     const [myObject, setMyObject] = useState(false);
 
     //리뷰 저장소
-    const [reviewArray, setReviewArray] = useState({});
+    const [reviewArray, setReviewArray] = useState([]);
+
+    //밸류 저장소
+    const [reviewValue, setReviewValue] = useState('');
 
     //별점 카운트
     const [curRatingStar, setCurRatingStar] = useState(Array(maxStarCount).fill({id: 'starNum', boolean: false}));
+
+    //별점 리셋 상태
+    const [resetStar, setResetStar] = useState(false);
     
     //리뷰 박스 on/off
     const [reviewBox, setReviewBox] = useState(false);
@@ -36,11 +43,14 @@ export default function DetailList() {
     //url 쿼리
     const { id: nowParams } = useParams();
 
+    const [idAddLength, setIdAddLength] = useState(reviewArray.length);
+
+    const reviewInput = useRef();
 
     useEffect(() => {
-        fetch('../subProductDB.json')
+        fetch(  process.env.PUBLIC_URL + '/subProductDB.json')
         .then(res => res.json())
-        .then(data => setProductArray(data))    
+        .then(data => setProductArray(data.productList))    
         .catch(error => console.log(error)); 
 
         window.scrollTo({top:0, left:0, behavior:'smooth'})
@@ -55,8 +65,8 @@ export default function DetailList() {
             setMyObject(productArray[nowIndex]);
             setStarArray(
                     {
-                        fasStars : Array(productArray[nowIndex].isRating).fill(''), 
-                        farStars : Array(maxStarCount - productArray[nowIndex].isRating).fill('')
+                        fasStars : Array(productArray[nowIndex].isRating).fill({id: 'farStar'}), 
+                        farStars : Array(maxStarCount - productArray[nowIndex].isRating).fill({id: 'fasStar'})
                     }
                 );
         }
@@ -67,18 +77,16 @@ export default function DetailList() {
         return <div>로딩중</div>
     }
 
-    
     function handleChangeBool(nowIndex = 0) {
         return () => {
+            setResetStar(false);
+            
             const star = [];
 
-            curRatingStar.forEach((object) => {
-                star.push({...object, boolean: false})
-            })
+            curRatingStar.forEach(object => star.push({...object, id: 'starNum', boolean: false}))
 
-            star.map((object, index) => {
-                //이말인즉슨 내가 누른 별까지만 true로 바뀐다 , true일떄는 채움 별 반환 즉, 내가 누른 인덱스만큼 별이 채워지게 됨.
-                //유즈스테이트로 만든것에만 불변성유지해주면될듯?
+            star.forEach((object, index) => {
+                //이말인즉슨 내가 누른 별까지만 true로 바뀐다 , true일떄는 채움 별 반환 즉, 내가 누른 인덱스까지 별이 채워지게 됨.
                 if(index <= nowIndex) {
                     object.boolean =  true;
                 } else {
@@ -86,10 +94,84 @@ export default function DetailList() {
                 }
             });
 
-            //console.log(star);
-
             setCurRatingStar(star);
         }   
+    }
+    
+
+    function handleChange(e) {
+        let nowValue = e.target.value;
+        if(e.target.value.length > 100) {
+            nowValue = nowValue.substring(0, reviewMaxLength);
+            //console.log(nowValue); 
+        }
+        setReviewValue(nowValue);
+    }
+
+    function handleReviewCreate() {
+
+        //리스트에 들어갈것들
+        //1. 멘트
+        //2. 시간초
+        //3. 별점
+        
+        /* curRatingStar.forEach((object) => {
+            if(object.boolean === true) {
+                trueArray.push(object.boolean);
+            }
+        }); */
+        
+        
+        //forEach 최적화, 찾고 반복 끝낼수있게
+
+        const nowListStarCount = [];
+
+        curRatingStar.forEach(object => nowListStarCount.push({...object, id: 'list_star_count'}))
+
+        //console.log(nowListStarCount);
+
+        const nowDate = calcTime();
+
+        setIdAddLength(idAddLength + 1);
+        setReviewArray(reviewArray.concat(
+                {
+                    id: `review_${idAddLength}`, 
+                    fillratingStar: nowListStarCount, 
+                    text: reviewValue, 
+                    createTime: nowDate
+                }
+            ))
+
+        setReviewValue('');
+        reviewInput.current.focus();
+    }
+
+    
+    function handleListDelete(nowIndex) {
+        const copy = reviewArray.slice();
+        //수정하는동시에 제거하면 안됨.. 제거하고 수정해야하는듯
+        //setReviewArray(copy.splice(nowIndex, 1))
+        copy.splice(nowIndex, 1);
+        setReviewArray(copy);
+        console.log(reviewArray);
+    }
+    
+    function calcTime() {
+        let newDate = new Date();
+        let nowYear = newDate.getFullYear();
+        let nowMonth = newDate.getMonth() + 1;
+        let nowDay = newDate.getDate();
+        let nowHours = newDate.getHours();
+        let nowMinutes = newDate.getMinutes();
+        let nowSeconds = newDate.getSeconds();
+
+        const changeLengthBefore = [nowMonth, nowDay, nowHours, nowMinutes, nowSeconds];
+
+        let changeLengthAfter = changeLengthBefore.map(time => time < 10 ? time = `0${time}` : time);
+
+        let time = `${nowYear}-${changeLengthAfter[0]}-${changeLengthAfter[1]}/${changeLengthAfter[2]}:${changeLengthAfter[3]}:${changeLengthAfter[4]}`;
+
+        return time;
     }
 
     return (
@@ -155,8 +237,8 @@ export default function DetailList() {
                             <div className="count_point">
                                 {starArray !== false ? 
                                 <>
-                                    {starArray.fasStars.map((index) => {return <span key={index}><FontAwesomeIcon icon={fasStar} /></span>})}
-                                    {starArray.farStars.map((index) => {return <span key={index}><FontAwesomeIcon icon={farStar} /></span>})}
+                                    {starArray.fasStars.map((object, index) => {return <span key={object.id + index}><FontAwesomeIcon icon={fasStar} /></span>})}
+                                    {starArray.farStars.map((object, index) => {return <span key={object.id + index}><FontAwesomeIcon icon={farStar} /></span>})}
                                 </>  
                                 : ''}
                             </div>
@@ -178,7 +260,8 @@ export default function DetailList() {
                             </p>
                             <div className="product_select_area">
                                 <button type="button" id="quantity_minus" className="quantity_btn"><FontAwesomeIcon icon={faChevronLeft} /></button>
-                                <input type="text" value={quantity} id="product_quantity_select"/>
+                                {/* <input type="text" id="product_quantity_select"/> */}
+                                <span id="product_quantity_select">1</span>
                                 <button type="button" id="quantity_plus" className="quantity_btn"><FontAwesomeIcon icon={faChevronRight} /></button>
                             </div>
                         </div>
@@ -258,14 +341,14 @@ export default function DetailList() {
                 <section id="product_reviews_section">
                     <ul className="info_tab_list">
                         <li>상세정보</li>
-                        <li class="tab_on">상품후기</li>
+                        <li className="tab_on">상품후기</li>
                         <li>상품문의</li>
                         <li>배송안내</li>
                         <li>안내사항</li>
                     </ul>
                     <div className="product_reviews_area">
                         <div className="top">
-                            <p className="total_info">전체 (총 <span className="review_couting">1</span>건)</p>
+                            <p className="total_info">전체 (총 <span className="review_couting">{reviewArray.length + 1}</span>건)</p>
                             <div className="best_review_btn blue_btn">
                                 BEST 후기 게시판
                             </div>
@@ -288,6 +371,29 @@ export default function DetailList() {
                                         <span className="review_id">ju****</span>
                                     </div>
                                 </li>
+                                {reviewArray.length >= 1 ? reviewArray.map((object, index)=>{
+                                    return (
+                                        <li key={object.id}>    
+                                            <p className="review_ment">
+                                                {object.text}
+                                                <span className = "delete" onClick={() => {handleListDelete(index)}}>
+                                                    <FontAwesomeIcon icon={faWindowClose}/>
+                                                </span>
+                                            </p>
+                                            <div className="right_info">
+                                                <ul className="rating_star">
+                                                    {object.fillratingStar.map((object, index) => {
+                                                        return (
+                                                            <li key={object.id + index}>{object.boolean ? <FontAwesomeIcon icon={fasStar}/> : <FontAwesomeIcon icon={farStar}/>}</li>
+                                                        )
+                                                    })}
+                                                </ul>
+                                                <span className="review_date date">{object.createTime}</span>
+                                                <span className="review_id">ju****</span>
+                                            </div>
+                                        </li>
+                                    )
+                                }) : ''}
                             </ul>
                             <div className="review_pagenation pagenation">
                                 <ul className="review_page_list page_list">
@@ -299,6 +405,7 @@ export default function DetailList() {
                                     setReviewBox(true);
                                 } else {
                                     setReviewBox(false);
+                                    setResetStar(true);
                                 }
                             }}>
                                 글쓰기
@@ -307,19 +414,18 @@ export default function DetailList() {
                                 <div className="text_top_area">
                                     <div className="str_length">
                                         현재
-                                        <span className="review_now_length"> 0 자</span>
+                                        <span className="review_now_length"> {reviewValue.length} 자</span>
                                         <span className="notice"></span>
                                         /최대 100자
                                     </div>
                                     <ul className="review_rating_star">
                                         {curRatingStar.map((object, index) => {
-                                            return <li onClick={handleChangeBool(index)}>{object.boolean === true ? <FontAwesomeIcon icon={fasStar}/>:<FontAwesomeIcon icon={farStar}/>}</li>
+                                            return <li key={object.id + index} onClick={handleChangeBool(index)}>{(object.boolean && !resetStar) ? <FontAwesomeIcon icon={fasStar}/>:<FontAwesomeIcon icon={farStar}/>}</li>
                                         })}
                                     </ul>
                                 </div>
-                                <div className="review_notice_ment nt_ment"></div>
-                                <textarea id="review_text_box" cols={10} rows={4} maxLength={100}></textarea>
-                                <button id="create_complete" className="blue_btn" type="button">작성완료</button>
+                                <textarea id="review_text_box" ref={reviewInput} value={reviewValue} onChange={handleChange} cols={10} rows={4} maxLength={100}></textarea>
+                                <button id="create_complete" className="blue_btn" type="button" onClick={handleReviewCreate}>작성완료</button>
                             </div>
                         </form>
                     </div>
@@ -332,7 +438,7 @@ export default function DetailList() {
                         <li>배송안내</li>
                         <li>안내사항</li>
                     </ul>
-                    <div class="qna_notice">
+                    <div className="qna_notice">
                         <p className="guide_01">제품에 관한 궁금한 점을 올리시면 신속한 답변을 드립니다.</p>
                         <p className="guide_02">배송,결제,교환/반품 등에 대한 문의는 <span>{"고객센터 > 이메일 상담"}</span>을 이용해주세요.</p>
                         <div className="question_btn">
@@ -352,7 +458,6 @@ export default function DetailList() {
                                 /최대 100자
                             </div>
                             <div className="qna_notice_ment nt_ment"></div>
-                            <textarea id="create_question_ment" cols={10} rows={4} maxLength={150}></textarea>
                             <div id="qna_create" className="blue_btn">문의 작성완료</div>
                         </div>
                         <p className="total_info">전체 (총 <span className="qna_couting">1</span>건)</p>
@@ -397,12 +502,12 @@ export default function DetailList() {
                     </ul>
                     <div className="more"><span></span>배송안내</div>
                     <div className="notice_ment ment_box">
-                        <p>CJ대한통운 (1588-1255)</p>
-                        <p>배송 지역:전국 (일부 지역 제외)</p>
+                        <p>CJ대한통운 {"(1588-1255)"}</p>
+                        <p>배송 지역:전국 {"(일부 지역 제외)"}</p>
                         <p>배송비:10만원 이상 구매 시 무료 배송</p>
                         <p>배송 기간:평일 오후 2시 이전 결제 완료 된</p>
                         <p>주문건은 당일 출고되며 배송은 1~3일 정도 소요됩니다.</p>
-                        <p className="detail_view color_gray">(자세히 보기)</p>
+                        <p className="detail_view color_gray">{"(자세히 보기)"}</p>
                     </div>
                 </section>
                 <section id="instructions_section">
