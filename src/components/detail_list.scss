@@ -274,7 +274,7 @@ input {
 
     .shipping_n_installment {
         margin-bottom: 30px;
-        padding: 15px 0;
+        padding: 20px 0;
         border-top: 1px solid #bbbbbb;
         border-bottom: 1px solid #bbbbbb;
 
@@ -285,7 +285,6 @@ input {
             li {
                 font-size: $small_up_font_size;
                 letter-spacing: -0.5px;
-                margin-bottom: 5px;
             }
 
             .list_left {
@@ -309,7 +308,32 @@ input {
             }
         }
     }
-
+    .product_info {
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #bbbbbb;
+        .more {
+            display: inline-block;
+            font-size: $small_up_font_size;
+            font-weight: 700;
+            border-bottom: 1px solid #000;
+            margin-bottom: 15px;
+    
+            span {
+                margin-right: 5px;
+            }
+        }
+        .detail_info_ment {
+            font-size: $small_up_font_size;
+            line-height: 25px;
+            letter-spacing: -0.8px;
+            .info_product_name {
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-right: 2px;
+            }
+        }
+    }
     .size_select {
         .color_gray {
             font-size: $defalut_font_size;
@@ -423,26 +447,6 @@ input {
 /************************* info_container ***************************/
 .info_container {
     @include box_array;
-    #product_details_section {
-        .product_detail_info {
-            display: flex;
-            p {
-                font-size: $small_up_font_size !important;
-                .model_name {
-                    font-weight: 700;
-                }
-            }
-            .product_select_img {
-                margin-right: 15px;
-                border: 1px solid black;
-                img {
-                    cursor: pointer;
-                    @include item_size(200px, 200px);
-                    object-fit: cover;
-                }
-            }
-        }
-    }
 
     #product_reviews_section {
         .product_reviews_area {
@@ -790,7 +794,7 @@ input {
         margin: 30px 0;
 
         li {
-            @include item_size(20%, 50px);
+            @include item_size(25%, 50px);
             line-height: 50px;
             font-size: 20px;
             line-height: 50px;
@@ -863,6 +867,17 @@ input {
             }
         }
     }
+    .more {
+        display: inline-block;
+        font-size: $small_up_font_size;
+        font-weight: 700;
+        border-bottom: 1px solid #000;
+        margin-bottom: 15px;
+
+        span {
+            margin-right: 5px;
+        }
+    }
 
     .ment_box {
         margin-bottom: 20px;
@@ -875,18 +890,6 @@ input {
 
         .color_gray {
             font-size: $small_font_size;
-        }
-    }
-
-    .more {
-        display: inline-block;
-        font-size: $small_up_font_size;
-        font-weight: 700;
-        border-bottom: 1px solid #000;
-        margin-bottom: 15px;
-
-        span {
-            margin-right: 5px;
         }
     }
 

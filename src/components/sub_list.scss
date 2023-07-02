@@ -50,6 +50,7 @@
                 position: relative;
                 padding: 0;
                 margin-right: 15px;
+                margin-bottom: 30px;
                 width: 300px;
                 flex: 0 0 auto;
                 cursor: pointer;
@@ -62,6 +63,22 @@
                 img {
                     @include item_size(300px, 420px);
                     object-fit: cover;
+                }
+                .cart_btn {
+                    position: absolute;
+                    user-select: none;
+                    padding: 5px;
+                    bottom: 10px; right: 0;
+                    z-index: 9999;
+                    background-color: black;
+                    transition: all 0.2s;
+                    img {
+                        @include item_size(30px, 30px);
+                        object-fit: cover;
+                    }
+                    &:hover {
+                        background-color: $sub_color_free_speach_blue;
+                    }
                 }
                 .img_link_01 {
                     position: absolute;

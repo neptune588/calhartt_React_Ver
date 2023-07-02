@@ -2,7 +2,8 @@
     "productList": [
         {
             "id": "CA22FWJAJH10144002",
-            "propertyNumber": 1,
+            "propertyNumber":1,
+            "clothTypes": "top",
             "productNameKor": "알링턴 베스트 에일 헤비 스톤 워시",
             "productModelName": "ALE HEAVY STONE WASH",
             "productColor": "brown",
@@ -13,18 +14,24 @@
                 "/images/sub_page_img/CA22FWJAJH10144002/CA22FWJAJH10144002-1.jpg",
                 "/images/sub_page_img/CA22FWJAJH10144002/CA22FWJAJH10144002-0.jpg"
             ],
-            "isNew": true,
-            "isBest": true,
-            "isSales": true,
+            "isNew": false,
+            "isBest": false,
             "isSalesRateValue": "30~50",
             "isSoldOut": false,
             "isGender": "male",
             "isRating": 3,
-            "stockQuantity": 15
+            "stockQuantity": 15,
+            "productInfo": [
+                "ARLINGTON VEST",
+                "는 면100% 'MARSHALL' 캔버스 소재의 조끼입니다.",
+                "안감 바디는 파일 소재로 이루어져 있습니다. 정면은 투웨이 지퍼 형태이며", 
+                "가슴 포켓 또한 지퍼로 여닫을 수 있습니다. 캥거루 포켓에 스퀘어 라벨이 부착되어 있습니다."
+            ]
         },
         {
             "id": "CA23SSJAJL00358002",
-            "propertyNumber": 2,
+            "propertyNumber":2,
+            "clothTypes": "top",
             "productNameKor": "코스탈 자켓 블랙/화이트",
             "productModelName": "COASTAL JACKET BLACK",
             "productColor": "black",
@@ -35,17 +42,23 @@
                 "/images/sub_page_img/CA23SSJAJL00358002/CA23SSJAJL00358002-1.jpg",
                 "/images/sub_page_img/CA23SSJAJL00358002/CA23SSJAJL00358002-0.jpg"
             ],
-            "isNew": true,
-            "isBest": true,
-            "isSales": false,
+            "isNew": false,
+            "isBest": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity": 18
+            "stockQuantity": 18,
+            "productInfo": [
+                "COASTAL JACKET",
+                "은 면100% 포플린 소재의 자켓입니다.",
+                "안감은 면 포플린 소재로 이루어져 있습니다. 후드는 팩커블 형태로 조절이 가능합니다.", 
+                "정면은 지퍼와 스냅으로 여닫을 수 있습니다. 소매에 스크립트 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSJAJL00266002",
-            "propertyNumber": 3,
+            "propertyNumber":3,
+            "clothTypes": "top",
             "productNameKor": "코스탈 자켓 화이트/블랙",
             "productModelName": "COASTAL JACKET WHITE",
             "productColor": "white",
@@ -56,17 +69,23 @@
                 "/images/sub_page_img/CA23SSJAJL00266002/CA23SSJAJL00266002-1.jpg",
                 "/images/sub_page_img/CA23SSJAJL00266002/CA23SSJAJL00266002-0.jpg"
             ],
-            "isNew": true,
-            "isBest": true,
-            "isSales": false,
+            "isNew": false,
+            "isBest": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 5,
-            "stockQuantity": 10
+            "stockQuantity": 10,
+            "productInfo": [
+                "COASTAL JACKET",
+                "은 면100% 포플린 소재의 자켓입니다.",
+                "안감은 면 포플린 소재로 이루어져 있습니다. 후드는 팩커블 형태로 조절이 가능합니다.", 
+                "정면은 지퍼와 스냅으로 여닫을 수 있습니다. 소매에 스크립트 자수가 있습니다."
+            ]
         },
         {
             "id": "CA22FWJAJL00026001",
-            "propertyNumber": 4,
+            "propertyNumber":4,
+            "clothTypes": "top",
             "productNameKor": "리그 자켓 블루",
             "productModelName": "LEAGUE JACKET",
             "productColor": "blue",
@@ -77,18 +96,25 @@
                 "/images/sub_page_img/CA22FWJAJL00026001/CA22FWJAJL00026001-1.jpg",
                 "/images/sub_page_img/CA22FWJAJL00026001/CA22FWJAJL00026001-0.jpg"
             ],
-            "isNew": true,
+            "isNew": false,
             "isBest": false,
-            "isSales": true,
             "isSalesRateValue": "30~50",
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 2,
-            "stockQuantity": 5
+            "stockQuantity": 5,
+            "productInfo": [
+                "LEAGUE JACKET",
+                "은 나일론 100% 소재의 자켓입니다.",
+                "폴리에스테르 충전재로 이루어져 있으며, 정면은 스냅 버튼으로 여닫을 수 있습니다.", 
+                "소매와 밑단은 RIB 소재로 되어 있습니다.",
+                "정면에 그래픽 로고가 아플리케 형태로 부착되어 있습니다."
+            ]
         },
         {
             "id": "CA22FWJAJL10171001",
-            "propertyNumber": 5,
+            "propertyNumber":5,
+            "clothTypes": "top",
             "productNameKor": "레터맨 자켓 블랙/브릭",
             "productModelName": "LETTERMAN JACKET",
             "productColor": "black",
@@ -99,18 +125,24 @@
                 "/images/sub_page_img/CA22FWJAJL10171001/CA22FWJAJL10171001-1.jpg",
                 "/images/sub_page_img/CA22FWJAJL10171001/CA22FWJAJL10171001-0.jpg"
             ],
-            "isNew": true,
+            "isNew": false,
             "isBest": false,
-            "isSales": true,
             "isSalesRateValue": "30~50",
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 2,
-            "stockQuantity": 8
+            "stockQuantity": 8,
+            "productInfo": [
+                "LETTERMAN JACKET",
+                "은 오가닉 코튼 100% 코듀로이 소재의 자켓입니다.",
+                "안감은 나일론 태피터 소재의 다이아몬드 퀼팅 처리 되어 있습니다.", 
+                "칼라와 소매, 밑단은 신축성이 있는 RIB-KNIT 소재입니다. 정면과 슬리브에 그래픽 자수가 있습니다."
+            ]
         },
         {
             "id": "CA22FWJAHS00285001",
-            "propertyNumber": 6,
+            "propertyNumber":6,
+            "clothTypes": "top",
             "productNameKor": "트레버 자켓 블랙/블랙",
             "productModelName": "TREVOR JACKET",
             "productColor": "black",
@@ -121,18 +153,25 @@
                 "/images/sub_page_img/CA22FWJAHS00285001/CA22FWJAHS00285001-1.jpg",
                 "/images/sub_page_img/CA22FWJAHS00285001/CA22FWJAHS00285001-0.jpg"
             ],
-            "isNew": true,
+            "isNew": false,
             "isBest": false,
-            "isSales": true,
             "isSalesRateValue": "30~50",
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity": 10
+            "stockQuantity": 10,
+            "productInfo": [
+                "TREVOR JACKET",
+                "은 폴리에스테르100% 신축성 있는 포플린 소재의 헤비 자켓입니다.",
+                "제품 안감은 나일론 소재로 이루어져 있습니다.", 
+                "제품은 전체적으로 다이아몬드 퀼팅 형태이며, 충전재는 오리 솜털80%와 깃털20%로 이루어졌습니다.",
+                "제품 앞면은 지퍼로 여닫음이 가능하며, 소매와 밑단은 둘레 조절이 가능합니다. 가슴 부분에 C 로고 자수가 있습니다."
+            ]
         },
         {
             "id": "CA22SSSHLS09389001",
-            "propertyNumber": 7,
+            "propertyNumber":7,
+            "clothTypes": "top",
             "productNameKor": "긴팔 매디슨 셔츠 페일 쿼츠/화이트",
             "productModelName": "L/S MADISON SHIRT",
             "productColor": "pink",
@@ -143,18 +182,24 @@
                 "/images/sub_page_img/CA22SSSHLS09389001/CA22SSSHLS09389001-1.jpg",
                 "/images/sub_page_img/CA22SSSHLS09389001/CA22SSSHLS09389001-0.jpg"
             ],
-            "isNew": true,
+            "isNew": false,
             "isBest": false,
-            "isSales": true,
             "isSalesRateValue": "30~50",
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 3,
-            "stockQuantity": 5
+            "stockQuantity": 5,
+            "productInfo": [
+                "L/S MADISON SHIRT",
+                "는 면100% 트윌 소재의 긴팔 셔츠입니다.",
+                "레귤러 핏이며, 가먼트 워싱 처리 되었습니다.", 
+                "버튼 다운 칼라 형태이며, 제품 정면 가슴에 메디슨 로고 자수가 있습니다."
+            ]
         },
         {
             "id": "CA22FWJAJL10139001",
-            "propertyNumber": 8,
+            "propertyNumber":8,
+            "clothTypes": "top",
             "productNameKor": "매닝 셔츠 자켓 매닝 체크, 다크 엄버/레더",
             "productModelName": "MANNING SHIRT JAC",
             "productColor": "brown",
@@ -165,18 +210,25 @@
                 "/images/sub_page_img/CA22FWJAJL10139001/CA22FWJAJL10139001-1.jpg",
                 "/images/sub_page_img/CA22FWJAJL10139001/CA22FWJAJL10139001-0.jpg"
             ],
-            "isNew": true,
+            "isNew": false,
             "isBest": false,
-            "isSales": true,
             "isSalesRateValue": "30~50",
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 2,
-            "stockQuantity": 6
+            "stockQuantity": 6,
+            "productInfo": [
+                "MANNING SHIRT JAC",
+                "는 폴리에스테르70%, 아크릴20%, 울10% 니트 소재의 셔츠 자켓입니다.",
+                "얀 다이드 소재를 사용하였으며, 안감이 없습니다.", 
+                "정면은 버튼으로 여닫을 수 있으며, 두개의 가슴 포켓은 플랩과 버튼으로 여닫을 수 있습니다.",
+                "가슴 포켓에 스퀘어 라벨이 부착되어 있습니다."
+            ]
         },
         {
             "id": "CA23SSJAJL11129001",
-            "propertyNumber": 9,
+            "propertyNumber":9,
+            "clothTypes": "top",
             "productNameKor": "몬트레이 셔츠 자켓 키위 원 워시드",
             "productModelName": "MONTEREY SHIRT JAC",
             "productColor": "green",
@@ -187,17 +239,25 @@
                 "/images/sub_page_img/CA23SSJAJL11129001/CA23SSJAJL11129001-1.jpg",
                 "/images/sub_page_img/CA23SSJAJL11129001/CA23SSJAJL11129001-0.jpg"
             ],
-            "isNew": true,
+            "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity": 8
+            "stockQuantity": 8,
+            "productInfo": [
+                "MONTEREY SHIRT JAC",
+                "은 면100% 'ALEXANDER' 트윌 소재의 셔츠 자켓입니다.",
+                "안감이 없으며, 두개의 가슴포켓은 플랩과 히든 그립퍼로 여닫을 수 있습니다.", 
+                "가슴 포켓에 스퀘어 라벨이 부착되어 있습니다.",
+                "",
+                "- 워싱된 제품은 밝은 계열의 제품과 함께 착용 시 이염 발생할 수 있으며, 단독 세탁을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSSHSS11170001",
-            "propertyNumber": 10,
+            "propertyNumber":10,
+            "clothTypes": "top",
             "productNameKor": "반팔 크래프트 셔츠 쥐라 린스드",
             "productModelName": "S/S CRAFT SHIRT",
             "productColor": "greenDown",
@@ -208,19 +268,26 @@
                 "/images/sub_page_img/CA23SSSHSS11170001/CA23SSSHSS11170001-1.jpg",
                 "/images/sub_page_img/CA23SSSHSS11170001/CA23SSSHSS11170001-0.jpg"
             ],
-            "isNew": true,
+            "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 5,
-            "stockQuantity": 3
+            "stockQuantity": 3,
+            "productInfo": [
+                "S/S CRAFT SHIRT",
+                "는 폴리에스테르65%, 면35% 'DUNMORE' 트윌 소재의 반팔 셔츠입니다.",
+                "루즈 핏이며, 두개의 가슴 포켓은 플랩과 버튼으로 여닫을 수 있습니다.", 
+                "가슴 포켓에 스퀘어 라벨이 부착되어 있습니다."
+            ]
         },
         {
             "id": "CA23SSSHSS11171001",
-            "propertyNumber": 11,
+            "propertyNumber":11,
+            "clothTypes": "top",
             "productNameKor": "반팔 델레이 셔츠 아말피/왁스",
             "productModelName": "S/S DELRAY SHIRT",
+            "productName": "AMALFI/WAX",
             "productColor": "blue",
             "productStyle": "shirt",
             "price": 118000,
@@ -229,17 +296,22 @@
                 "/images/sub_page_img/CA23SSSHSS11171001/CA23SSSHSS11171001-1.jpg",
                 "/images/sub_page_img/CA23SSSHSS11171001/CA23SSSHSS11171001-0.jpg"
             ],
-            "isNew": true,
-            "isBest": false,
-            "isSales": false,
+            "isNew": false,
+            "isBest": true,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 3,
-            "stockQuantity": 11
+            "stockQuantity": 11,
+            "productInfo": [
+                "S/S DELRAY SHIRT",
+                "는 텐셀60%, 면40% 트윌 소재의 반팔 셔츠입니다.",
+                "루즈 핏이며, 가슴에 그래픽 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSSHSS11172001",
-            "propertyNumber": 12,
+            "propertyNumber":12,
+            "clothTypes": "top",
             "productNameKor": "반팔 델레이 셔츠 피닉스/왁스",
             "productModelName": "S/S DELRAY SHIRT",
             "productColor": "orange",
@@ -250,17 +322,22 @@
                 "/images/sub_page_img/CA23SSSHSS11172001/CA23SSSHSS11172001-1.jpg",
                 "/images/sub_page_img/CA23SSSHSS11172001/CA23SSSHSS11172001-0.jpg"
             ],
-            "isNew": true,
+            "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity": 7
+            "stockQuantity": 7,
+            "productInfo": [
+                "S/S DELRAY SHIRT",
+                "는 텐셀60%, 면40% 트윌 소재의 반팔 셔츠입니다.",
+                "루즈 핏이며, 가슴에 그래픽 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSSWCR00991001",
-            "propertyNumber": 13,
+            "propertyNumber":13,
+            "clothTypes": "top",
             "productNameKor": "칼하트 스웻셔츠 그레이 헤더/블랙",
             "productModelName": "CARHARTT SWEATSHIRT",
             "productColor": "gray",
@@ -273,15 +350,27 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity": 21
+            "stockQuantity": 21,
+            "productInfo": [
+                "CARHARTT WIP",
+                "은 대만의 편집샵인 INVINCIBLE의 15주년을 기념하여 캡슐 컬렉션을 발매하였습니다.",
+                "이번 컬렉션은 크리에이티브 디렉터인 SHINSUKE NAKADA와 함께 하였습니다.",
+                "", 
+                "HOODED INVINCIBLE 15 SWEATSHIRT는 면80%, 폴리에스테르20% 소재의 후디드 스웻셔츠입니다.",
+                "오버사이즈 핏이며, 안감 기모가 있는 제품입니다.",
+                "정면에 캥거루 포켓에 스퀘어 라벨과 콜라보레이션 자수가 있습니다.",
+                "",
+                "<오프라인 판매 매장 정보>",
+                "- 칼하트WIP 홍대점: 02) 337-8333"
+            ]
         },
         {
             "id": "CA23SSSWCR06655001",
-            "propertyNumber": 14,
+            "propertyNumber":14,
+            "clothTypes": "top",
             "productNameKor": "칼하트 스웻셔츠 트리하우스/화이트",
             "productModelName": "CARHARTT SWEATSHIRT",
             "productColor": "greenDown",
@@ -294,15 +383,22 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 2,
-            "stockQuantity": 2
+            "stockQuantity": 2,
+            "productInfo": [
+                "HOODED CHROMO SWEATSHIRT",
+                "는 면100% 소재의 후디드 스웻셔츠입니다. 벌룬 핏이며, 안감 기모가 없는 제품입니다.",
+                "정면에 캥거루 포켓이 있으며, 가슴과 후면에 그래픽 프린트가 있습니다.",
+                "",
+                "- 세탁 및 다림 시 그래픽의 손상 및 변형이 생길 수 있으므로, 뒤집어 세탁 및 다림을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSSWCR11284001",
-            "propertyNumber": 15,
+            "propertyNumber":15,
+            "clothTypes": "top",
             "productNameKor": "칼하트 스웻셔츠 루피너스/화이트",
             "productModelName": "CARHARTT SWEATSHIRT",
             "productColor": "purple",
@@ -315,15 +411,20 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 5,
-            "stockQuantity": 4
+            "stockQuantity": 4,
+            "productInfo": [
+                "CARHARTT SWEATSHIRT",
+                "는 면100% 소재의 스웻셔츠입니다. 루즈 핏이며, 안감 기모가 없는 제품입니다.",
+                "정면에 스크립트 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSSWCR11230001",
-            "propertyNumber": 16,
+            "propertyNumber":16,
+            "clothTypes": "top",
             "productNameKor": "후디드 칼하트 스웻셔츠 키위/시트론",
             "productModelName": "HOODED CARHARTT SWEATSHIRT",
             "productColor": "green",
@@ -336,15 +437,21 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 3,
-            "stockQuantity": 8
+            "stockQuantity": 8,
+            "productInfo": [
+                "HOODED CARHARTT SWEATSHIRT",
+                "는 면57%, 폴리에스테르43% 소재의 후디드 스웻셔츠입니다.",
+                "와이드 핏이며, 안감 기모가 없는 제품입니다.",
+                "후드는 둘레 조절이 가능합니다. 정면에 캥거루 포켓이 있으며, 스크립트 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSSWHO11200001",
-            "propertyNumber": 17,
+            "propertyNumber":17,
+            "clothTypes": "top",
             "productNameKor": "후디드 로커 스웻셔츠 피닉스/블랙",
             "productModelName": "HOODED LOCKER SWEATSHIRT",
             "productColor": "orange",
@@ -357,15 +464,21 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 2,
-            "stockQuantity": 7
+            "stockQuantity": 7,
+            "productInfo": [
+                "HOODED LOCKER SWEATSHIRT",
+                "는 면80%, 폴리에스테르20% 소재의 후디드 스웻셔츠입니다.",
+                "루즈 핏이며, 안감 기모가 있는 제품입니다.",
+                "정면에 캥거루 포켓이 있으며, 그래픽 자수와 패치가 부착되어 있습니다."
+            ]
         },
         {
             "id": "CA23SSSWCR11195001",
-            "propertyNumber": 18,
+            "propertyNumber":18,
+            "clothTypes": "top",
             "productNameKor": "넬슨 스웻셔츠 피신 가먼트 다이드",
             "productModelName": "NELSON SWEATSHIRT",
             "productColor": "skyBlue",
@@ -378,15 +491,22 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 2,
-            "stockQuantity": 10
+            "stockQuantity": 10,
+            "productInfo": [
+                "NELSON SWEATSHIRT",
+                "는 면100% 스웻셔츠입니다.",
+                "벌룬 핏이며, 안감 기모가 없는 제품입니다. 가슴에 스퀘어 라벨이 부착되어 있습니다.",
+                "",
+                "- 염색된 제품은 밝은 계열의 제품과 함께 착용 시 이염 발생할 수 있으며, 단독 세탁을 권장합니다."
+            ]
         },
         {
             "id": "CA22FWKNKC10174001",
-            "propertyNumber": 19,
+            "propertyNumber":19,
+            "clothTypes": "top",
             "productNameKor": "앨비언 가디건 재스퍼 헤더",
             "productModelName": "ALBION CARDIGAN",
             "productColor": "brown",
@@ -399,16 +519,21 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": true,
             "isSalesRateValue": "30~50",
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity": 8
+            "stockQuantity": 8,
+            "productInfo": [
+                "ALBION CARDIGAN",
+                "은 아크릴54%, 나일론36%, 울6%, 엘라스테인4% 소재의 가디건입니다.",
+                "암홀 부분이 하나로 니팅되어 있으며, 소매에 C로고 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSKNKP00040001",
-            "propertyNumber": 20,
+            "propertyNumber":20,
+            "clothTypes": "top",
             "productNameKor": "코스트 스테이트 스웨터 화이트",
             "productModelName": "COAST STATE SWEATER",
             "productColor": "gray",
@@ -421,15 +546,20 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 5,
-            "stockQuantity": 10
+            "stockQuantity": 10,
+            "productInfo": [
+                "COAST STATE SWEATER",
+                "는 면100% 소재의 스웨터입니다.",
+                "솔기 부분들이 오픈되어 있는 디테일이 있으며, 그래픽 자카드가 있습니다."
+            ]
         },
         {
             "id": "CA22SSKNKP09357001",
-            "propertyNumber": 21,
+            "propertyNumber":21,
+            "clothTypes": "top",
             "productNameKor": "매디슨 스웨터 아이시 워터/프로스티드 블루",
             "productModelName": "MADISON SWEATER",
             "productColor": "blue",
@@ -442,16 +572,21 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": true,
             "isSalesRateValue": "30~50",
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 2,
-            "stockQuantity": 9
+            "stockQuantity": 9,
+            "productInfo": [
+                "MADISON SWEATER",
+                "는 면100% 니트 소재의 니트입니다.",
+                "암홀 부분이 하나로 니팅되어 있으며, 정면 가슴에 메디슨 로고 자수가 있습니다."
+            ]
         },
         {
             "id": "CA22FWKNKP00104001",
-            "propertyNumber": 22,
+            "propertyNumber":22,
+            "clothTypes": "top",
             "productNameKor": "스크립트 니트 베스트 내츄럴",
             "productModelName": "SCRIPT KNIT VEST",
             "productColor": "white",
@@ -464,16 +599,21 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": true,
             "isSalesRateValue": "30~50",
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 3,
-            "stockQuantity": 4
+            "stockQuantity": 4,
+            "productInfo": [
+                "SCRIPT KNIT VEST",
+                "는 면100% 니트 소재의 베스트입니다.",
+                "암홀과 넥라인 부분이 하나로 니팅되어 있으며, 정면 가슴에 스크립트 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSKNKP11280001",
-            "propertyNumber": 23,
+            "propertyNumber":23,
+            "clothTypes": "top",
             "productNameKor": "알더스 니트 베스트 캐리비안 시",
             "productModelName": "S/S ALDUS KNIT VEST",
             "productColor": "skyBlue",
@@ -486,15 +626,20 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 5,
-            "stockQuantity": 7
+            "stockQuantity": 7,
+            "productInfo": [
+                "S/S ALDUS KNIT VEST",
+                "는 면100% 니트 소재의 베스트입니다.",
+                "암홀과 넥라인이 전체적으로 니팅 처리 되어 있으며, 가슴에 아메리칸 스크립트 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSKNKP00002002",
-            "propertyNumber": 24,
+            "propertyNumber":24,
+            "clothTypes": "top",
             "productNameKor": "반팔 켄웨이 니트 폴로 블랙",
             "productModelName": "S/S KENWAY KNIT POLO",
             "productColor": "black",
@@ -507,15 +652,20 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity": 21
+            "stockQuantity": 21,
+            "productInfo": [
+                "S/S KENWAY KNIT POLO",
+                "는 면100% 니트 소재의 반팔 폴로 니트입니다.",
+                "루즈 게이지 패브릭이며, 가슴에 자수 패치가 부착되어 있습니다."
+            ]
         },
         {
             "id": "CA23SSTSSS11280001",
-            "propertyNumber": 25,
+            "propertyNumber":25,
+            "clothTypes": "top",
             "productNameKor": "반팔 셀리 티셔츠 캐리비안 시",
             "productModelName": "S/S CELLY T-SHIRT",
             "productColor": "blue",
@@ -528,15 +678,19 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 5,
-            "stockQuantity": 13
+            "stockQuantity": 13,
+            "productInfo": [
+                "S/S CELLY T-SHIRT",
+                "는 면100% 소재의 반팔 티셔츠입니다."
+            ]
         },
         {
             "id": "CA23SSTSSS00040026",
-            "propertyNumber": 26,
+            "propertyNumber":26,
+            "clothTypes": "top",
             "productNameKor": "반팔 코스트 스테이트 티셔츠 화이트",
             "productModelName": "S/S COAST STATE T-SHIRT",
             "productColor": "white",
@@ -549,15 +703,22 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 2,
-            "stockQuantity": 10
+            "stockQuantity": 10,
+            "productInfo": [
+                "S/S COAST STATE T-SHIRT",
+                "는 오가닉 코튼100% 싱글저지 소재의 반팔 티셔츠입니다.",
+                "루즈 핏이며, 가슴과 후면에 그래픽 프린트가 있습니다.",
+                "",
+                "- 세탁 및 다림 시 그래픽의 손상 및 변형이 생길 수 있으므로, 뒤집어 세탁 및 다림을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSTSSS11234002",
-            "propertyNumber": 27,
+            "propertyNumber":27,
+            "clothTypes": "top",
             "productNameKor": "반팔 히트 스크립트 티셔츠 아렌가",
             "productModelName": "S/S HEAT SCRIPT T-SHIRT",
             "productColor": "purple",
@@ -570,15 +731,22 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity": 6
+            "stockQuantity": 6,
+            "productInfo": [
+                "S/S HEAT SCRIPT T-SHIRT",
+                "는 오가닉 코튼100% 싱글 저지 소재의 반팔 티셔츠입니다.",
+                "루즈 핏이며, 정면에 그래픽 프린트가 있습니다.",
+                "",
+                "- 세탁 및 다림 시 그래픽의 손상 및 변형이 생길 수 있으므로, 뒤집어 세탁 및 다림을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSTSSS11190002",
-            "propertyNumber": 28,
+            "propertyNumber":28,
+            "clothTypes": "top",
             "productNameKor": "반팔 매뉴얼 티셔츠 달리아 가먼트 다이드",
             "productModelName": "S/S MANUAL T-SHIRT",
             "productColor": "pink",
@@ -591,15 +759,22 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 3,
-            "stockQuantity": 3
+            "stockQuantity": 3,
+            "productInfo": [
+                "S/S MANUAL T-SHIRT",
+                "는 오가닉 코튼100% 싱글 저지 소재의 반팔 티셔츠입니다.",
+                "루즈 핏이며, 가슴과 후면에 그래픽 프린트가 있습니다.",
+                "",
+                "- 세탁 및 다림 시 그래픽의 손상 및 변형이 생길 수 있으므로, 뒤집어 세탁 및 다림을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSTSSS11110001",
-            "propertyNumber": 29,
+            "propertyNumber":29,
+            "clothTypes": "top",
             "productNameKor": "반팔 뉴 프론티어 티셔츠 버팔로",
             "productModelName": "S/S NEW FRONTIER T-SHIRT",
             "productColor": "brown",
@@ -612,15 +787,20 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": "male",
+            "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity": 2
+            "stockQuantity": 2,
+            "productInfo": [
+                "S/S NEW FRONTIER T-SHIRT",
+                "는 오가닉 코튼100% 싱글 저지 소재의 반팔 티셔츠입니다.",
+                "레귤러 핏이며, 가슴에 그래픽 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSTSSS00002018",
-            "propertyNumber": 30,
+            "propertyNumber":30,
+            "clothTypes": "top",
             "productNameKor": "반팔 팜 스크립트 티셔츠 블랙",
             "productModelName": "S/S PALM SCRIPT T-SHIRT",
             "productColor": "black",
@@ -633,38 +813,22 @@
             ],
             "isNew": false,
             "isBest": false,
-            "isSales": false,
-            "isSoldOut": false,
-            "isGender": "male",
-            "isRating": 5,
-            "stockQuantity": 10
-        }
-    ],
-    "bestProductList": [
-        {
-            "id": "CA23SSSHSS11171001",
-            "propertyNumber": 1,
-            "productNameKor": "반팔 델레이 셔츠 아말피/왁스",
-            "productModelName": "S/S DELRAY SHIRT",
-            "productName": "AMALFI/WAX",
-            "productColor": "blue",
-            "productStyle": "shirt",
-            "price": 118000,
-            "imgSrc": [
-                "/images/sub_page_img/CA23SSSHSS11171001/CA23SSSHSS11171001-1.jpg",
-                "/images/sub_page_img/CA23SSSHSS11171001/CA23SSSHSS11171001-0.jpg"
-            ],
-            "isNew": false,
-            "isBest": true,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
-            "isRating": 3,
-            "stockQuantity" : 11
+            "isRating": 5,
+            "stockQuantity": 10,
+            "productInfo": [
+                "S/S PALM SCRIPT T-SHIRT",
+                "는 오가닉 코튼100% 싱글 저지 소재의 반팔 티셔츠입니다.",
+                "루즈 핏이며, 정면에 그래픽 프린트가 있습니다.",
+                "",
+                "- 세탁 및 다림 시 그래픽의 손상 및 변형이 생길 수 있으므로, 뒤집어 세탁 및 다림을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSSHSS11114001",
-            "propertyNumber": 2,
+            "propertyNumber":31,
+            "clothTypes": "top",
             "productNameKor": "반팔 루멘 셔츠 루멘 프린트, 블랙",
             "productModelName": "S/S LUMEN SHIRT",
             "productName": "LUMEN PRINT, BLACK",
@@ -677,19 +841,25 @@
             ],
             "isNew": false,
             "isBest": true,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity" : 8
+            "stockQuantity": 8,
+            "productInfo": [
+                "S/S LUMEN SHIRT",
+                "는 면100% 캔버스 소재의 반팔 셔츠입니다.",
+                "루즈 핏이며, 올오버 프린트 형식입니다.",
+                "가먼트 워시드 처리 되어 있으며, 가슴 포켓이 있습니다. 코코넛 단추로 이루어져 있습니다."
+            ]
         },
         {
             "id": "CA23SSTSSS11220001",
-            "propertyNumber": 3,
+            "propertyNumber":32,
+            "clothTypes": "top",
             "productNameKor": "반팔 부기 티셔츠 달리 헤비 스톤 워시",
             "productModelName": "S/S BOOGIE T-SHIRT",
             "productName": "DAHLIA HEAVY STONE WASH",
-            "productColor": "black",
+            "productColor": "pink",
             "productStyle": "TShirt",
             "price": 78000,
             "imgSrc": [
@@ -698,15 +868,23 @@
             ],
             "isNew": false,
             "isBest": true,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
             "isRating": 5,
-            "stockQuantity" : 7
+            "stockQuantity": 7,
+            "productInfo": [
+                "S/S BOOGIE T-SHIRT",
+                "는 오가닉 코튼100% 싱글 저지 소재의 반팔 티셔츠입니다.",
+                "루즈 핏이며, 정면에 그래픽 프린트가 있습니다.",
+                "",
+                "- 세탁 및 다림 시 그래픽의 손상 및 변형이 생길 수 있으므로, 뒤집어 세탁 및 다림을 권장합니다.",
+                "- 워싱된 제품은 밝은 계열의 제품과 함께 착용 시 이염 발생할 수 있으며, 단독 세탁을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSACSC11082001",
-            "propertyNumber": 4,
+            "propertyNumber":33,
+            "clothTypes": "acc",
             "productNameKor": "빅 벅 반다나 수베니어 프린트, 블랙",
             "productModelName": "BIG BUCK BANDANA",
             "productName": "SOUVENIR PRINT, BLACK",
@@ -719,15 +897,20 @@
             ],
             "isNew": false,
             "isBest": true,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": ["female","male"],
+            "isGender": ["female", "male"],
             "isRating": 4,
-            "stockQuantity" : 20
+            "stockQuantity": 20,
+            "productInfo": [
+                "BIG BUCK BANDANA",
+                "는 비스코프 포플린 100% 소재의 반다나입니다.",
+                "사이즈는 70 X 70 CM로, 그래픽 프린트가 있습니다."
+            ]
         },
         {
             "id": "CA23SSSTWO00760001",
-            "propertyNumber": 5,
+            "propertyNumber":34,
+            "clothTypes": "bottom",
             "productNameKor": "싱글 니 쇼츠 스미스 블루 스톤 워시드",
             "productModelName": "SINGLE KNEE SHORT SMITH",
             "productName": "BLUE STONE WASHED",
@@ -740,15 +923,24 @@
             ],
             "isNew": false,
             "isBest": true,
-            "isSales": false,
             "isSoldOut": false,
-            "isGender": ["female","male"],
+            "isGender": ["female", "male"],
             "isRating": 2,
-            "stockQuantity" : 6
+            "stockQuantity": 6,
+            "productInfo": [
+                "SINGLE KNEE SHORT",
+                "는 면100% 'SMITH' 데님 소재의 워크 쇼츠입니다.",
+                "릴렉스드 핏에 밑위는 레귤러 웨이스트입니다.",
+                "전체적으로 트리플 스티칭 되있으며, 지퍼 플라이 형식입니다.",
+                "제품 측면에는 툴 포켓, 해머 루프가 있으며, 후면 포켓에 스퀘어 라벨이 부착되어 있습니다.",
+                "",
+                "- 워싱된 제품은 밝은 계열의 제품과 함께 착용 시 이염 발생할 수 있으며, 단독 세탁을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSSTWO00759001",
-            "propertyNumber": 6,
+            "propertyNumber": 35,
+            "clothTypes": "bottom",
             "productNameKor": "싱글 니 쇼츠 스미스 블루 스톤 블리치드",
             "productModelName": "SINGLE KNEE SHORT SMITH",
             "productName": "BLUE STONE BLEACHED",
@@ -765,11 +957,21 @@
             "isSoldOut": false,
             "isGender": ["female","male"],
             "isRating": 3,
-            "stockQuantity" : 10
+            "stockQuantity" : 10,
+            "productInfo": [
+                "SINGLE KNEE SHORT",
+                "는 면100% 'SMITH' 데님 소재의 워크 쇼츠입니다.",
+                "릴렉스드 핏에 밑위는 레귤러 웨이스트입니다.",
+                "전체적으로 트리플 스티칭 되있으며, 지퍼 플라이 형식입니다.",
+                "제품 측면에는 툴 포켓, 해머 루프가 있으며, 후면 포켓에 스퀘어 라벨이 부착되어 있습니다.",
+                "",
+                "- 워싱된 제품은 밝은 계열의 제품과 함께 착용 시 이염 발생할 수 있으며, 단독 세탁을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSHEBC11100001",
-            "propertyNumber": 7,
+            "propertyNumber":36,
+            "clothTypes": "acc",
             "productNameKor": "윈튼 버킷 햇 쥐라/유카 스톤 워시드",
             "productModelName": "WYNTON BUCKET HAT",
             "productName": "JURA/YUCCA STONE WASHED",
@@ -782,15 +984,23 @@
             ],
             "isNew": false,
             "isBest": true,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["female"],
             "isRating": 4,
-            "stockQuantity" : 4
+            "stockQuantity": 4,
+            "productInfo": [
+                "WYNTON BUCKET HAT",
+                "은 면100% 'COOSA' 립스탑 소재의 버킷햇입니다.",
+                "안감이 있으며, 정면에 스퀘어 라벨이 부착되어 있습니다.",
+                "",
+                "M-L: 58 CM",
+                "L-XL: 61 CM"
+            ]
         },
         {
             "id": "CA23SSJAJL02283003",
-            "propertyNumber": 8,
+            "propertyNumber":37,
+            "clothTypes": "top",
             "productNameKor": "디트로이트 자켓 블랙/블랙 린스드",
             "productModelName": "DETROIT JACKET",
             "productName": "BLACK/BLACK RINSED",
@@ -803,17 +1013,22 @@
             ],
             "isNew": false,
             "isBest": true,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
             "isRating": 5,
-            "stockQuantity" : 2
-        }
-    ],
-    "newProductList": [
+            "stockQuantity": 2,
+            "productInfo": [
+                "DETROIT JACKET",
+                "은 오가닉 코튼100% 'DEARBORN' 캔버스 소재의 자켓입니다.",
+                "바디 안감은 메쉬 소재, 소매 안감은 나일론으로 이루어져 있습니다.",
+                "전체적으로 트리플 스티칭 되어 있으며, 탑 칼라는 코듀로이 소재로 되어 있습니다.",
+                "소매와 밑단은 둘레 조절이 가능합니다. 가슴 포켓에 스퀘어 라벨이 부착되어 있습니다."
+            ]
+        },
         {
             "id": "CA23SSJAJL11136002",
-            "propertyNumber": 9,
+            "propertyNumber":38,
+            "clothTypes": "top",
             "productNameKor": "살레도 자켓 블랙 라이트 유즈드 워시",
             "productModelName": "SALEDO JACKET",
             "productName": "BLACK LIGHT USED WASH",
@@ -826,15 +1041,24 @@
             ],
             "isNew": true,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity" : 6
+            "stockQuantity": 6,
+            "productInfo": [
+                "SALEDO JACKET",
+                "은 오가닉 코튼100% 'MAITLAND' 데님 소재의 자켓입니다.",
+                "안감이 없으며, 트리플 스티칭 되어 있습니다.",
+                "2개의 가슴 포켓은 플랩과 버튼으로 여닫을 수 있습니다.",
+                "소매와 밑단은 둘레 조절이 가능합니다. 가슴 포켓에 스퀘어 라벨이 부착되어 있습니다.",
+                "",
+                "- 워싱된 제품은 밝은 계열의 제품과 함께 착용 시 이염 발생할 수 있으며, 단독 세탁을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSJAJL00760005",
-            "propertyNumber": 10,
+            "propertyNumber":39,
+            "clothTypes": "top",
             "productNameKor": "살레도 자켓 블루 스톤 워시드",
             "productModelName": "SALEDO JACKET",
             "productName": "BLUE STONE WASHED",
@@ -847,15 +1071,24 @@
             ],
             "isNew": true,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity" : 8
+            "stockQuantity": 8,
+            "productInfo": [
+                "SALEDO JACKET",
+                "은 오가닉 코튼100% 'MAITLAND' 데님 소재의 자켓입니다.",
+                "안감이 없으며, 트리플 스티칭 되어 있습니다.",
+                "2개의 가슴 포켓은 플랩과 버튼으로 여닫을 수 있습니다.",
+                "소매와 밑단은 둘레 조절이 가능합니다. 가슴 포켓에 스퀘어 라벨이 부착되어 있습니다.",
+                "",
+                "- 워싱된 제품은 밝은 계열의 제품과 함께 착용 시 이염 발생할 수 있으며, 단독 세탁을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSPAOT00266001",
-            "propertyNumber": 11,
+            "propertyNumber":40,
+            "clothTypes": "bottom",
             "productNameKor": "코스탈 팬츠 화이트/블랙",
             "productModelName": "COASTAL PANT",
             "productName": "WHITE/BLACK",
@@ -868,15 +1101,22 @@
             ],
             "isNew": true,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
             "isRating": 5,
-            "stockQuantity" : 15
+            "stockQuantity": 15,
+            "productInfo": [
+                "COASTAL PANT",
+                "는 면100% 포플린 소재의 바지입니다.",
+                "릴렉스드 핏에 밑위는 레귤러 웨이스트입니다.",
+                "허리와 밑단은 신축성이 있으며, 조절식 벨트가 있습니다.",
+                "지퍼 플라이 형식입니다. 무릎 부분은 이중으로 덧대어져 있으며, 스크립트 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSPAWO09367001",
-            "propertyNumber": 12,
+            "propertyNumber":41,
+            "clothTypes": "bottom",
             "productNameKor": "더블 니 팬츠 페어필드 블루 헤비 스톤 워시",
             "productModelName": "DOUBLE KNEE PANT FAIRFIELD",
             "productName": "BLUE HEAVY STONE WASH",
@@ -889,15 +1129,24 @@
             ],
             "isNew": true,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity" : 8
+            "stockQuantity": 8,
+            "productInfo": [
+                "DOUBLE KNEE PANT",
+                "는 오가닉 코튼 100% 'FAIRFIELD' 데님 소재의 워크 팬츠입니다.",
+                "릴렉스드 스트레이트 핏에 밑위는 레귤러 웨이스트입니다.",
+                "전체적으로 트리플 스티칭 되있으며, 지퍼 플라이 형식입니다.",
+                "무릎 부분은 이중으로 덧대어져 있습니다. 제품 측면에는 툴 포켓, 해머 루프가 있으며, 후면 포켓에 스퀘어 라벨이 부착되어 있습니다.",
+                "",
+                "- 워싱된 제품은 밝은 계열의 제품과 함께 착용 시 이염 발생할 수 있으며, 단독 세탁을 권장합니다."
+            ]
         },
         {
             "id": "CA23SSSMSS11207001",
-            "propertyNumber": 13,
+            "propertyNumber":42,
+            "clothTypes": "bottom",
             "productNameKor": "아일랜드 스윔 트렁크 키위/블랙",
             "productModelName": "ISLAND SWIM TRUNKS",
             "productName": "KIWI/BLACK",
@@ -910,15 +1159,24 @@
             ],
             "isNew": true,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
             "isRating": 3,
-            "stockQuantity" : 6
+            "stockQuantity": 6,
+            "productInfo": [
+                "ISLAND SWIM TRUNKS",
+                "는 폴리에스테르100% 소재의 스윔 쇼츠입니다.",
+                "건조가 빠른 소재이며, 안감이 없습니다.",
+                "허리 밴드는 드로우코드로 둘레 조절이 가능합니다.",
+                "측면에 포켓이 있으며, 밑단에는 스크립트 자수가 있습니다.",
+                "",
+                "후면에는 키 홀더가 부착되어 있습니다."
+            ]
         },
         {
             "id": "CA23SSSMSS11208001",
-            "propertyNumber": 14,
+            "propertyNumber":43,
+            "clothTypes": "bottom",
             "productNameKor": "아일랜드 스윔 트렁크 마리나 프린트, 아톰 블루/화이트",
             "productModelName": "ISLAND SWIM TRUNKS",
             "productName": "MARINA PRINT, ATOM BLUE/WHITE",
@@ -931,15 +1189,21 @@
             ],
             "isNew": true,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male"],
             "isRating": 4,
-            "stockQuantity" : 4
+            "stockQuantity": 4,
+            "productInfo": [
+                "S/S MARINA SHIRT",
+                "는 면54%, 텐셀46% 새틴 소재의 반팔 셔츠입니다.",
+                "루즈 핏이며, 올오버 프린트 형식입니다.",
+                "가먼트 워시드 처리 되어 있으며, 가슴 포켓이 있습니다."
+            ]
         },
         {
             "id": "CA23SSHECP11106001",
-            "propertyNumber": 15,
+            "propertyNumber": 44,
+            "clothTypes": "acc",
             "productNameKor": "델레이 캡 월/시트론",
             "productModelName": "DELRAY CAP",
             "productName": "WALL/CITRON",
@@ -956,11 +1220,18 @@
             "isSoldOut": false,
             "isGender": ["male, female"],
             "isRating": 5,
-            "stockQuantity" : 8
+            "stockQuantity": 8,
+            "productInfo": [
+                "DELRAY CAP",
+                "은 면100% 트윌 소재의 모자입니다.",
+                "모자 둘레는 메탈 버클 스트랩을 사용하여 49 ~ 55 CM 까지 유동적으로 조절이 가능합니다.",
+                "가먼트 워시드 처리 되어있습니다. 6개의 패널 형식이며, 정면에 그래픽 자수가 있습니다."
+            ]
         },
         {
             "id": "CA23SSACKC00321001",
-            "propertyNumber": 16,
+            "propertyNumber":45,
+            "clothTypes": "acc",
             "productNameKor": "시베리안 파카 키체인 골드",
             "productModelName": "SIBERIAN PARKA KEYCHAIN",
             "productName": "GOLD",
@@ -973,11 +1244,20 @@
             ],
             "isNew": true,
             "isBest": false,
-            "isSales": false,
             "isSoldOut": false,
             "isGender": ["male, female"],
             "isRating": 5,
-            "stockQuantity" : 10
+            "stockQuantity": 10,
+            "productInfo": [
+                "SIBERIAN PARKA KEYCHAIN",
+                "은 아연 합금 소재의 키체인입니다.",
+                "사이즈는 5.5 X 3.5 CM로, 칼하트의 아이콘인 시베리안 파카 형태입니다."
+            ]
         }
-    ]
+    ],
+    "infoMent": {
+        "top": ["다양한 패턴과 소재로 제작된 상의, 이번 시즌에는 놓치지 마세요!"],
+        "bottom": ["편안한 착용감과 스타일을 동시에! 다양한 소재로 만들어진 하의를 만나보세요."],
+        "acc": ["세련된 악세사리로 더욱 독특한 매력을 더하세요. 트렌디한 디자인을 만날 수 있습니다."]
+    }
 }

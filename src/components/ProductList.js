@@ -27,19 +27,27 @@ export default function ProductList() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch( process.env.PUBLIC_URL + '/subProductDB.json' )
+    fetch( process.env.PUBLIC_URL + '/ProductDB.json' )
     .then((res) => {
       return res.json();
     })
     .then((data) => {
-      setBestproArray(data.bestProductList);
-      setNewproArray(data.newProductList);
+      const bestFilter = data.productList.filter(object => object.isBest && !object.isNew)
+      const newFilter = data.productList.filter(object => object.isNew && !object.isBest)
+
+      setBestproArray(bestFilter);
+      setNewproArray(newFilter);
     })
     .catch((error) => console.log('에러: ', error));
     
   },[]);
   
-  //console.log(bestproArray, newproArray);
+
+
+/*   useEffect(() => {
+    console.log(bestproArray, newproArray)
+  },[bestproArray, newproArray])
+   */
 
 
   const bestProduct = {

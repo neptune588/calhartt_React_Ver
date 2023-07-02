@@ -1,4 +1,4 @@
-import { React , useEffect, useState, useRef } from 'react'
+import { React , useEffect, useState, useRef, Fragment } from 'react'
 import { useParams } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,8 +10,12 @@ import './detail_list.scss';
 
 export default function DetailList() {
 
+    //별 최대 갯수
     const maxStarCount = 5;
+    //리뷰 최대 달수있는 갯수
     const reviewMaxLength = 100;
+    //상품 info 65자넘으면 br
+    const brLength = 65;
 
     //데이터 받아와서 저장하는 배열
     const [productArray, setProductArray] = useState([]);
@@ -48,7 +52,7 @@ export default function DetailList() {
     const reviewInput = useRef();
 
     useEffect(() => {
-        fetch(  process.env.PUBLIC_URL + '/subProductDB.json')
+        fetch( process.env.PUBLIC_URL + '/ProductDB.json')
         .then(res => res.json())
         .then(data => setProductArray(data.productList))    
         .catch(error => console.log(error)); 
@@ -114,15 +118,6 @@ export default function DetailList() {
         //1. 멘트
         //2. 시간초
         //3. 별점
-        
-        /* curRatingStar.forEach((object) => {
-            if(object.boolean === true) {
-                trueArray.push(object.boolean);
-            }
-        }); */
-        
-        
-        //forEach 최적화, 찾고 반복 끝낼수있게
 
         const nowListStarCount = [];
 
@@ -298,6 +293,21 @@ export default function DetailList() {
                             <li className="list_right">최대 6개월<span className="color_gray">(단, 일시불 할인 및 법인 카드 사용 불가)</span></li>
                         </ul>
                     </div>
+                    <section className="product_info">
+                        <div className="more"><span></span>상세정보</div>
+                        <p className="detail_info_ment">{myObject.productInfo.map((value, index) => {
+                            let myIndex = myObject.productInfo.indexOf(value);
+                            return (
+                                <Fragment key={index}>
+                                {
+                                    myIndex === 0 ? <span className="info_product_name">{myObject.productInfo[myIndex]}</span> 
+                                    : <>{value}<br/></> 
+                                }
+                                </Fragment>
+                            )
+                        })}
+                        </p>
+                    </section>
                     <section className="size_select">
                         <p className="color_gray">사이즈</p>
                         <ul className="size_list">
@@ -322,25 +332,8 @@ export default function DetailList() {
                 </div>
             </div>
             <div className="info_container">
-                <section id="product_details_section">
-                    <ul className="info_tab_list">
-                        <li className="tab_on"><a href="#product_details_section">상세정보</a></li>
-                        <li><a href="#product_reviews_section">상품후기</a></li>
-                        <li><a href="#qna_section">상품문의</a></li>
-                        <li><a href="#product_shipping_notice_section">배송안내</a></li>
-                        <li><a href="#instructions_section">안내사항</a></li>
-                    </ul>
-                    <div className="more"><span></span>상세정보</div>
-                    <div className="product_detail_info ment_box">
-                        <p className="pro_description">
-                            <span className="model_name">COASTAL JACKET</span> 면100% 포플린 소재의 자켓입니다.
-                            안감은 면 포플린 소재로 이루어져 있습니다. 후드는 팩커블 형태로 조절이 가능합니다. 정면은 지퍼와 스냅으로 여닫을 수 있습니다. 소매에 스크립트 자수가 있습니다.
-                        </p>
-                    </div>
-                </section>
                 <section id="product_reviews_section">
                     <ul className="info_tab_list">
-                        <li>상세정보</li>
                         <li className="tab_on">상품후기</li>
                         <li>상품문의</li>
                         <li>배송안내</li>
@@ -432,7 +425,6 @@ export default function DetailList() {
                 </section>
                 <section id="qna_section">
                     <ul className="info_tab_list">
-                        <li>상세정보</li>
                         <li>상품후기</li>
                         <li className="tab_on">상품문의</li>
                         <li>배송안내</li>
@@ -494,7 +486,6 @@ export default function DetailList() {
                 </section>
                 <section id="product_shipping_notice_section">
                     <ul className="info_tab_list">
-                        <li>상세정보</li>
                         <li>상품후기</li>
                         <li>상품문의</li>
                         <li className="tab_on">배송안내</li>
@@ -512,7 +503,6 @@ export default function DetailList() {
                 </section>
                 <section id="instructions_section">
                     <ul className="info_tab_list">
-                        <li>상세정보</li>
                         <li>상품후기</li>
                         <li>상품문의</li>
                         <li>배송안내</li>

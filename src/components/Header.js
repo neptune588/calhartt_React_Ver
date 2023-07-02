@@ -6,32 +6,36 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { useSelector } from 'react-redux';
+
 import './header.scss';
 
 export default function Header() {
+  const currentState = useSelector(state => state.cartData);
+
   const navigate = useNavigate();
 
   const subMenuArray = [
     {
       id: 'sub01',
       name: 'TOP',
-      Linkname: 'subpage',
+      Linkname: 'top',
     },
     {
       id: 'sub02',
       name: 'BOTTOM',
-      Linkname: 'subpage',
+      Linkname: 'bottom',
     },
     {
       id: 'sub03',
       name: 'ACC',
-      Linkname: 'subpage',
+      Linkname: 'acc',
     },
-    {
+/*     {
       id: 'sub04',
       name: 'BRAND',
-      Linkname: 'subpage',
-    },
+      Linkname: 'brand',
+    }, */
   ];
 
 /*   useEffect(() => {
@@ -51,9 +55,19 @@ export default function Header() {
           
           <Nav className="lnb">
             {subMenuArray.map((object) => {
-              return <Nav.Link className='sub_menu' key={`${object.id}`} onClick={() => {navigate(`/${object.Linkname}`)}}>{object.name}</Nav.Link>
+              return <Nav.Link className='sub_menu' key={`${object.id}`} onClick={() => {navigate(`/subpage/${object.Linkname}`)}}>{object.name}</Nav.Link>
             })}
           </Nav>
+          
+          <Nav className="gnb">
+            <ul className="gnb_list">
+              <li className="sing_in" onClick={() => {navigate('/')}}>로그인</li>
+              <li className="sign_up" onClick={() => {navigate('/')}}>회원가입</li>
+              <li className="cart" onClick={() => {navigate('/cart')}}>
+                장바구니<span className="cart_icon"><img src={process.env.PUBLIC_URL + "/images/cart_icon.png"} alt="cart_icon"/></span><span className="cart_product_length">{currentState.list.length}</span></li>
+            </ul>
+          </Nav>
+
           <Form className="d-flex search_area">
             <Form.Control
               type="search"
