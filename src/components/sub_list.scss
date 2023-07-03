@@ -1,5 +1,65 @@
 @import 'common.scss';
 
+
+/************************* loading ***************************/
+.loading {
+    position: fixed;
+    overflow: hidden;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba($color: #e4e4e4, $alpha: 0.6);
+    z-index: 99999;
+    .loading_ment {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        .circle {
+            position: relative;
+            @include item_size(100px, 100px);
+            border: 15px solid rgb(109, 109, 109);
+            border-radius: 50%;
+            transform: rotate(0deg);
+            .circle_bar {
+                position: absolute;
+                top: 0;
+                background-color: white;
+                @include item_size(10px, 10px);
+                line-height: 10px;
+                border-radius: 50%;
+            }
+        }
+        .circle_ani {
+            animation: circle_ani 1.5s infinite linear;
+        }
+        p {
+            margin-left: 15px;
+            color: black;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        @keyframes circle_ani {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+
+/************************* loading ***************************/
+.not_search {
+    @include box_array;
+    margin: 50px auto;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
 /************************* visual_sub ***************************/
 .visual_sub {
     position: relative;
@@ -24,6 +84,7 @@
                 color: white;
                 font-size: 24px;
                 font-family: $font_perment_marker;
+                font-weight: 700;
             }
             p {
                 color: white;

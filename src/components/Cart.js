@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMinus, faPlus, faTimes, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteList } from './store';
+import { deleteList, decrease, increase, allDelete } from './store';
 
 import { useNavigate } from 'react-router-dom';
 import './cart.scss';
@@ -19,6 +19,7 @@ const CartTitle = styled.h2`
 
 export default function Cart() {
   const navigate = useNavigate();
+
   const currentState = useSelector(state => state.cartData);
   const dispatch = useDispatch();
 
@@ -49,7 +50,7 @@ export default function Cart() {
           <p id="cart_total_length">{`총 ${currentState.list.length} 개`}</p>
         </div>
         <div className="product_all_delete">
-          <p>전체삭제<span><FontAwesomeIcon icon={faTimes}/></span></p>
+          <p onClick={() => {dispatch(allDelete())}}>전체삭제<span><FontAwesomeIcon icon={faTimes}/></span></p>
         </div>
       </section>
       <div id="product_list_container">
@@ -73,10 +74,16 @@ export default function Cart() {
                 </div>
                 <div className="product_quantity_area">
                   <div className="control_quantity">
-                    <button className="decrease_btn"><FontAwesomeIcon icon={faMinus}/></button>
-                    <span className="quantity_number">{object.count}</span>
-                    <button className="increase_btn"><FontAwesomeIcon icon={faPlus}/></button>
+                    <div className="quantity_area">
+                      <button className="decrease_btn" onClick={() => {dispatch(decrease(object.id))}}><FontAwesomeIcon icon={faMinus}/></button>
+                      <span className="quantity_number">{object.count}</span>
+                      <button className="increase_btn" onClick={() => {dispatch(increase(object.id))}}><FontAwesomeIcon icon={faPlus}/></button>
+                    </div>
+                    <p className={ currentState.noticeIndex === index ? "notice_ment block_on" : "notice_ment"}>
+                      재고량을 초과 하였습니다!
+                    </p>
                   </div>
+                  <div className="stock_quantity_length quantity_length">{`재고량: ${object.stockQuantity}개`}</div>
                   <div className="quantity_length">{`선택 수량: ${object.count}개`}</div>
                 </div>
                 <div className="order_price_n_pro_delete_area">
@@ -89,8 +96,8 @@ export default function Cart() {
         </ul>
         <section className="total_area">
           <div className="calc">
-            <p className="total_length"><span>총 상품 수량:</span>{`${currentState.list.length} 개`}</p>
-            <p className="total_price"><span>총 주문 금액:</span> 45,000원</p>
+            <p className="total_length"><span>총 상품 수량:</span> {`${currentState.totalCount} 개`}</p>
+            <p className="total_price"><span>총 주문 금액:</span> {`${currentState.totalPrice.toLocaleString()}원`}</p>
             <button className="buy_btn">BUY NOW</button>
           </div>
         </section>

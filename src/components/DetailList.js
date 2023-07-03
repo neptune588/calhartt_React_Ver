@@ -6,9 +6,19 @@ import { faHeart, faChevronLeft, faChevronRight, faStar as fasStar, faWindowClos
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 import { faTwitter, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { addList } from './store';
+
 import './detail_list.scss';
 
+import CartAni from './CartAni';
+
 export default function DetailList() {
+
+    const dispatch = useDispatch();
+
+    const [cartState, setCartState] = useState(false);
+    const [doubleClick, setDoubleClick] = useState(false);
 
     //별 최대 갯수
     const maxStarCount = 5;
@@ -171,6 +181,7 @@ export default function DetailList() {
 
     return (
         <>
+            <CartAni cartAni={cartState}/>
             <div className="contents_product_buy">
                 <div className="product_view_area">
                     <section className="style_code">
@@ -324,7 +335,29 @@ export default function DetailList() {
                     </section>
                     <div className="size_n_buy">
                         <div className="buy_n_keep">
-                            <div className="keep_btn">장바구니</div>
+                            <div className="keep_btn" onClick={() => {
+                                if(!doubleClick) {
+                                    setCartState(true);
+                                    setDoubleClick(true);
+
+                                    dispatch(addList({
+                                        id: myObject.id + myObject.propertyNumber,
+                                        imgSrc: myObject.imgSrc[0],
+                                        price: myObject.price,
+                                        productNameKor: myObject.productNameKor,
+                                        productNameEng: myObject.productModelName,
+                                        stockQuantity: myObject.stockQuantity,
+                                        count: 1,
+                                        immunPrice: myObject.price,
+                                    }));
+
+                                    setTimeout(() => {
+                                        setCartState(false);
+                                        setDoubleClick(false);
+                                    }, 900);
+
+                                }
+                            }}>장바구니</div>
                             <div className="buy_btn">구매하기</div>
                         </div>
                         <p className="color_gray notice">* 주문/배송/반품 등 일반 문의는 1:1문의를 이용해 주시기 바랍니다.</p>

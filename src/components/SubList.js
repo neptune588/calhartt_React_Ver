@@ -8,39 +8,55 @@ import { Link, Routes, Route, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addList } from './store';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearchMinus } from '@fortawesome/free-solid-svg-icons';
+
 import './sub_list.scss';
+import { styled } from 'styled-components';
 
 import CartAni from './CartAni';
 
+
+const NotSearchIcon = styled(FontAwesomeIcon)`
+    font-size: 3rem;
+    margin-right: 15px;
+`
 export default function SubList(props) {
     
-    const currentState = useSelector(state => state.cartData);
     const dispatch = useDispatch();
 
-    console.log(currentState);
+    //console.log(currentState);
     
     const {types: clothType} = props;
     //console.log(clothType);
 
     const [subProductLi, setSubProductLi] = useState(false);
-    const [vsMent, setVsMent] = useState("");
+    const [vsInfo, setVsInfo] = useState("");
 
     const [cartState, setCartState] = useState(false);
     const [doubleClick, setDoubleClick] = useState(false);
 
+    const [loadingAniState, setLoadingAniState] = useState(true);
+
     const navigate = useNavigate();    
+
+    useEffect(() => {
+        window.scrollTo({top:0, left:0, behavior:'smooth'})
+    },[]);
 
     useEffect(() => {
         fetch( process.env.PUBLIC_URL + '/ProductDB.json' )
         .then(res => res.json())
         .then((data) => {
+            setLoadingAniState(false);
+
             const nowTypes = data.productList.filter(object => object.clothTypes === clothType);
             
             //infoment의 키 걸러내서 배열화 -> 파라미터랑 같은 키값 추출 -> 해당 멘트 출력
-            const nowMent = Object.keys(data.infoMent).filter(value => value === clothType);
+            const nowkey = Object.keys(data.infoMent).filter(value => value === clothType);
 
             setSubProductLi(nowTypes);
-            setVsMent(data.infoMent[nowMent]);
+            setVsInfo(data.infoMent[nowkey]);
 
             //console.log(nowMent)
 
@@ -68,21 +84,30 @@ export default function SubList(props) {
     }
 
     if(!subProductLi) {
-        return <div>상품 정보를 불러오는 중입니다.</div>
+        return (
+            <div className="loading">
+                <div className="loading_ment">
+                    <div className={loadingAniState ? "circle circle_ani" : "circle"}>
+                        <span className="circle_bar"></span>
+                    </div>
+                    <p>상품 정보를 불러오는 중입니다.</p>
+                </div>
+            </div>
+        )
     }
     if(subProductLi.length === 0) {
-        return <div>상품을 찾을 수 없습니다.</div>
+        return <div className="not_search"><NotSearchIcon icon={faSearchMinus}/>상품 정보를 찾을 수 없습니다.</div>
     }
     
     return (
         <>
             <div className="visual_sub">
                 <Link to={`/subpage/${clothType}`}>
-                    <img src={process.env.PUBLIC_URL + "/images/visual_sub01.jpg"} alt={'vs_01'}/>
+                    <img src={process.env.PUBLIC_URL + vsInfo.srcAlt[0]} alt={vsInfo.srcAlt[1]}/>
                     <div className="ment_box_ex">
                     <div className="ment_box">
                         <h2>{`${clothType.toUpperCase()}`}</h2>
-                        <p>{vsMent}</p>
+                        <p>{vsInfo.ment[0]}</p>
                     </div>
                     </div>
                 </Link>
@@ -107,8 +132,9 @@ export default function SubList(props) {
                                                 price: object.price,
                                                 productNameKor: object.productNameKor,
                                                 productNameEng: object.productModelName,
+                                                stockQuantity: object.stockQuantity,
                                                 count: 1,
-                                                immunCount: 1,
+                                                immunPrice: object.price,
                                             }));
 
                                             setTimeout(() => {

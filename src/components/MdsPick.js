@@ -103,11 +103,11 @@ export default function MdsPick() {
       <ul className="acodian_menu">
         {mdsArray.map((object,index) => {
           return (
-            <li className = {acodian === index ? `${object.liClassName} acodian_on`: object.liClassName} onClick={object.handleClick(index)}>
+            <li key={object.id} className = {acodian === index ? `${object.liClassName} acodian_on`: object.liClassName} onClick={object.handleClick(index)}>
               <img src={acodian === index ? object.hoverSrc : object.src} alt={object.id}/>
               <div className = {object.proInfoClassName}>
-                {object.mdsText.map((text) => {
-                  return <MdsMent>{text}</MdsMent>
+                {object.mdsText.map((text, index) => {
+                  return <MdsMent key={index}>{text}</MdsMent>
                 })}
                 <button className="buy_button" onClick={() => {navigate(`/subpage/:${object.clothCategory}`)}}>구매하기</button>
               </div>

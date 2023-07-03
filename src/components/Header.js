@@ -1,9 +1,8 @@
-import React from 'react';
+import { React, useRef, useEffect, useState } from 'react';
 
 import {Container, Nav, Navbar, Form, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { useSelector } from 'react-redux';
@@ -15,6 +14,13 @@ export default function Header() {
 
   const navigate = useNavigate();
 
+  const inputMaxLength = 20;
+
+  //기본값 안주어지면 오류뜸 인풋 밸류 기본값은 항상 있어야함.
+  const [searchValue, setSearchValue] = useState("");
+
+  const searchInput = useRef();
+  
   const subMenuArray = [
     {
       id: 'sub01',
@@ -46,6 +52,50 @@ export default function Header() {
     }
   }, []); */
 
+  function handleSearch(e) {
+    if(e.target.value === '' || e.target.value === undefined || e.target.value === null) {
+      return;
+    }
+
+    if(e.key === 'Enter') {
+      let time;
+      clearTimeout(time);
+
+      time = setTimeout(() => {
+        navigate(`/searchpage/${e.target.value}`);
+        setSearchValue('');
+      }, 20);
+
+      //nowLocation.pathname;
+      //console.log(nowLocation.pathname);
+      searchInput.current.focus();
+
+    }
+  }
+
+  function handleChange(e) {
+    let nowValue = e.target.value;
+
+    if(nowValue.length > inputMaxLength) {
+      nowValue = e.target.value.substring(0, inputMaxLength);
+    }
+
+    setSearchValue(nowValue);
+  }
+  
+
+  function handleClickSearch() {
+    let time;
+      clearTimeout(time);
+
+      time = setTimeout(() => {
+        navigate(`/searchpage/${searchInput.current.value}`);
+        setSearchValue('');
+      }, 20);
+
+    searchInput.current.focus();
+  }
+
   return (
       <Navbar className="nav_ex" bg="dark" data-bs-theme="dark">
         <Container className="nav">
@@ -67,16 +117,22 @@ export default function Header() {
                 장바구니<span className="cart_icon"><img src={process.env.PUBLIC_URL + "/images/cart_icon.png"} alt="cart_icon"/></span><span className="cart_product_length">{currentState.list.length}</span></li>
             </ul>
           </Nav>
+          
+          <div className="search_area">
+            <input onKeyUp={handleSearch} onChange={handleChange} value={searchValue} ref={searchInput} className="search_bar" type="search"/>
+            <button className="search_btn" type="button" onClick={handleClickSearch}>search</button>
+          </div>
 
-          <Form className="d-flex search_area">
+{/*           <Form className="d-flex search_area">
             <Form.Control
               type="search"
               placeholder="Search"
               className="me-2 search_bar"
               aria-label="Search"
+              onKeyUp={handleSearch}
             />
             <Button className="search_btn" variant="outline-success">Search</Button>
-          </Form>
+          </Form> */}
         </Container>
       </Navbar>
   )

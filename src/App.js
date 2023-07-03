@@ -8,7 +8,9 @@ import Main from './pages/Main.js';
 import Sub from './pages/Sub.js';
 import Cart from './components/Cart.js';
 import Detail from './pages/Detail.js';
+import Top from './components/Top';
 import Footer from './components/Footer.js';
+import Search from './components/Search';
 
 function App() {
   return (
@@ -28,8 +30,12 @@ function App() {
         <Route path="detail/:id" element = {
           <Detail/>
         }/>
+        <Route path="searchpage/:keyword" element ={
+          <Search/>
+        }/>
       </Routes>
 
+      <Top/>
       <Footer/>
     </>
   );

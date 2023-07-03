@@ -420,6 +420,11 @@ input {
                 margin-right: 15px;
                 background-color: #fff;
                 border: 2px solid #bbbbbb;
+                transition: all 0.2s;
+                &:hover {
+                    color: red;
+                    border: 2px solid black;
+                }
             }
 
             .buy_btn {

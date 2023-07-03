@@ -1,4 +1,4 @@
-import React from 'react';
+import { React , useEffect } from 'react';
 
 import VisualMain from '../components/VisualMain';
 import ProductList from '../components/ProductList';
@@ -7,6 +7,10 @@ import MdsPick from '../components/MdsPick';
 import InstaGram from '../components/InstaGram';
 
 export default function Main() {
+  useEffect(() => {
+    window.scrollTo({top:0, left:0, behavior:'smooth'})
+  },[]);
+
   return (
     <>
       <VisualMain/>
