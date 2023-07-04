@@ -85,6 +85,10 @@ export default function Header() {
   
 
   function handleClickSearch() {
+    if(searchInput.current.value === '' || searchInput.current.value === undefined || searchInput.current.value === null) {
+      return;
+    }
+
     let time;
       clearTimeout(time);
 
