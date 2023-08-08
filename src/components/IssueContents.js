@@ -217,7 +217,7 @@ export default function IssueContents() {
             </div>
           )
         })}
-        <img src={process.env.PUBLIC_URL + "images/look_book_01.jpg"} alt="l_b_img_01"/>
+        <img src={process.env.PUBLIC_URL + "/images/look_book_01.jpg"} alt="l_b_img_01"/>
       </div>
     )
   } else if(showSection === 1) {
@@ -249,7 +249,7 @@ export default function IssueContents() {
             </div>
           )
         })}
-        <img src={process.env.PUBLIC_URL + "images/look_book_02.jpg"} alt="l_b_img_02"/>
+        <img src={process.env.PUBLIC_URL + "/images/look_book_02.jpg"} alt="l_b_img_02"/>
       </div>
       )
   } else if(showSection === 2) {
@@ -284,7 +284,7 @@ export default function IssueContents() {
             </div>
           )
         })}
-        <img src={process.env.PUBLIC_URL + "images/look_book_03.jpg"} alt="l_b_img_03"/>
+        <img src={process.env.PUBLIC_URL + "/images/look_book_03.jpg"} alt="l_b_img_03"/>
       </div>
     )
   }
@@ -302,7 +302,7 @@ export default function IssueContents() {
               //hover값 초기화
               setShowText('');
               }}>
-              <img src={process.env.PUBLIC_URL + "images/look_book_thumnail_01.jpg"} alt="l_b_thum01"></img>
+              <img src={process.env.PUBLIC_URL + "/images/look_book_thumnail_01.jpg"} alt="l_b_thum01"></img>
             </div>
             <div className="video_n_look_book">
               <div className="video_film">
@@ -318,7 +318,7 @@ export default function IssueContents() {
                   //hover값 초기화
                   setShowText('');
                   }}>
-                  <img src={process.env.PUBLIC_URL + "images/look_book_thumnail_02.jpg"} alt="l_b_thum02"/>
+                  <img src={process.env.PUBLIC_URL + "/images/look_book_thumnail_02.jpg"} alt="l_b_thum02"/>
                 </div>
                 <div className="small_look_book02 look_book_show_tab" onClick={() => {
                   setShowSection(2);
@@ -326,7 +326,7 @@ export default function IssueContents() {
                   //hover값 초기화
                   setShowText('');
                   }}>
-                <img src={process.env.PUBLIC_URL + "images/look_book_thumnail_03.jpg"} alt="l_b_thum03"/>
+                <img src={process.env.PUBLIC_URL + "/images/look_book_thumnail_03.jpg"} alt="l_b_thum03"/>
                 </div>
               </div>
             </div>
