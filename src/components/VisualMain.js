@@ -30,19 +30,19 @@ export default function VisualMain() {
   const slides = [
     {
       id: 'vm01',
-      src: process.env.PUBLIC_URL + `images/visual_main01.jpg`,
+      src: process.env.PUBLIC_URL + `/images/visual_main01.jpg`,
     },
     {
       id: 'vm02',
-      src: process.env.PUBLIC_URL + `images/visual_main02.jpg`,
+      src: process.env.PUBLIC_URL + `/images/visual_main02.jpg`,
     },
     {
       id: 'vm03',
-      src: process.env.PUBLIC_URL + `images/visual_main03.jpg`,
+      src: process.env.PUBLIC_URL + `/images/visual_main03.jpg`,
     },
     {
       id: 'vm04',
-      src: process.env.PUBLIC_URL + `images/visual_main04.jpg`,
+      src: process.env.PUBLIC_URL + `/images/visual_main04.jpg`,
     },
 
   ]
