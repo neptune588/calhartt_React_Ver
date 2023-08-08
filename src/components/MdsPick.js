@@ -29,8 +29,8 @@ export default function MdsPick() {
     {
       id : 'mds_01',
       liClassName: "md_list",
-      src : process.env.PUBLIC_URL + "images/mds_01.jpg", 
-      hoverSrc: process.env.PUBLIC_URL + "images/mds_acodian_01.jpg",
+      src : process.env.PUBLIC_URL + "/images/mds_01.jpg", 
+      hoverSrc: process.env.PUBLIC_URL + "/images/mds_acodian_01.jpg",
       clothCategory: 'top',
       handleClick: (index) => {
         return () => {
@@ -46,8 +46,8 @@ export default function MdsPick() {
     {
       id : 'mds_02',
       liClassName: "md_list",
-      src : process.env.PUBLIC_URL + "images/mds_02.jpg",
-      hoverSrc: process.env.PUBLIC_URL + "images/mds_acodian_02.jpg",
+      src : process.env.PUBLIC_URL + "/images/mds_02.jpg",
+      hoverSrc: process.env.PUBLIC_URL + "/images/mds_acodian_02.jpg",
       clothCategory: 'top',
       handleClick: (index) => {
         return () => {
@@ -63,8 +63,8 @@ export default function MdsPick() {
     {
       id : 'mds_03',
       liClassName: "md_list",
-      src : process.env.PUBLIC_URL + "images/mds_03.jpg",
-      hoverSrc: process.env.PUBLIC_URL + "images/mds_acodian_03.jpg",
+      src : process.env.PUBLIC_URL + "/images/mds_03.jpg",
+      hoverSrc: process.env.PUBLIC_URL + "/images/mds_acodian_03.jpg",
       clothCategory: 'top',
       handleClick: (index) => {
         return () => {
@@ -80,8 +80,8 @@ export default function MdsPick() {
     {
       id : 'mds_04',
       liClassName: "md_list",
-      src : process.env.PUBLIC_URL + "images/mds_04.jpg",
-      hoverSrc: process.env.PUBLIC_URL + "images/mds_acodian_04.jpg",
+      src : process.env.PUBLIC_URL + "/images/mds_04.jpg",
+      hoverSrc: process.env.PUBLIC_URL + "/images/mds_acodian_04.jpg",
       clothCategory: 'top',
       handleClick: (index) => {
         return () => {
