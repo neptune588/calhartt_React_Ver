@@ -23,7 +23,7 @@ export default function IssueContents() {
       {
         id: 'hoverImg01',
         className: 'hover_img hover_img01',
-        src:  process.env.PUBLIC_URL + 'images/look_book_0_cloth01.png',
+        src:  process.env.PUBLIC_URL + '/images/look_book_0_cloth01.png',
         handleMouseOver : (index) => {
           return () => {setShowText(index)};
         },
@@ -32,7 +32,7 @@ export default function IssueContents() {
       {
         id: 'hoverImg02',
         className: 'hover_img hover_img02',
-        src:  process.env.PUBLIC_URL + 'images/look_book_0_cloth02.png',
+        src:  process.env.PUBLIC_URL + '/images/look_book_0_cloth02.png',
         handleMouseOver : (index) => {
           return () => {setShowText(index)};
         },
@@ -43,7 +43,7 @@ export default function IssueContents() {
       {
         id: 'hoverImg04',
         className: 'hover_img hover_img01',
-        src:  process.env.PUBLIC_URL + 'images/look_book_1_cloth01.png',
+        src:  process.env.PUBLIC_URL + '/images/look_book_1_cloth01.png',
         handleMouseOver : (index) => {
           return () => {setShowText(index)};
         },
@@ -52,7 +52,7 @@ export default function IssueContents() {
       {
         id: 'hoverImg05',
         className: 'hover_img hover_img02',
-        src:  process.env.PUBLIC_URL + 'images/look_book_1_cloth02.png',
+        src:  process.env.PUBLIC_URL + '/images/look_book_1_cloth02.png',
         handleMouseOver : (index) => {
           return () => {setShowText(index)};
         },
@@ -61,7 +61,7 @@ export default function IssueContents() {
       {
         id: 'hoverImg06',
         className: 'hover_img hover_img03',
-        src:  process.env.PUBLIC_URL + 'images/look_book_1_cloth03.png',
+        src:  process.env.PUBLIC_URL + '/images/look_book_1_cloth03.png',
         handleMouseOver : (index) => {
           return () => {setShowText(index)};
         },
@@ -72,7 +72,7 @@ export default function IssueContents() {
       {
         id: 'hoverImg07',
         className: 'hover_img hover_img01',
-        src:  process.env.PUBLIC_URL + 'images/look_book_2_cloth01.png',
+        src:  process.env.PUBLIC_URL + '/images/look_book_2_cloth01.png',
         handleMouseOver : (index) => {
           return () => {setShowText(index)};
         },
@@ -81,7 +81,7 @@ export default function IssueContents() {
       {
         id: 'hoverImg08',
         className: 'hover_img hover_img02',
-        src:  process.env.PUBLIC_URL + 'images/look_book_2_cloth02.png',
+        src:  process.env.PUBLIC_URL + '/images/look_book_2_cloth02.png',
         handleMouseOver : (index) => {
           return () => {setShowText(index)};
         },
@@ -90,7 +90,7 @@ export default function IssueContents() {
       {
         id: 'hoverImg09',
         className: 'hover_img hover_img03',
-        src:  process.env.PUBLIC_URL + 'images/look_book_2_cloth03.png',
+        src:  process.env.PUBLIC_URL + '/images/look_book_2_cloth03.png',
         handleMouseOver : (index) => {
           return () => {setShowText(index)};
         },
@@ -99,7 +99,7 @@ export default function IssueContents() {
       {
         id: 'hoverImg10',
         className: 'hover_img hover_img04',
-        src:  process.env.PUBLIC_URL + 'images/look_book_2_cloth04.png',
+        src:  process.env.PUBLIC_URL + '/images/look_book_2_cloth04.png',
         handleMouseOver : (index) => {
           return () => {setShowText(index)};
         },
