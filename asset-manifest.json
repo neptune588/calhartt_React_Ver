@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/calhartt_React_Ver/static/css/main.cbfbe022.css",
+    "main.js": "/calhartt_React_Ver/static/js/main.8bcc6c22.js",
+    "index.html": "/calhartt_React_Ver/index.html",
+    "main.cbfbe022.css.map": "/calhartt_React_Ver/static/css/main.cbfbe022.css.map",
+    "main.8bcc6c22.js.map": "/calhartt_React_Ver/static/js/main.8bcc6c22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbfbe022.css",
+    "static/js/main.8bcc6c22.js"
+  ]
+}
