@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/calhartt_React_Ver/static/css/main.cbfbe022.css",
-    "main.js": "/calhartt_React_Ver/static/js/main.8bcc6c22.js",
+    "main.js": "/calhartt_React_Ver/static/js/main.6b98bad8.js",
     "index.html": "/calhartt_React_Ver/index.html",
     "main.cbfbe022.css.map": "/calhartt_React_Ver/static/css/main.cbfbe022.css.map",
-    "main.8bcc6c22.js.map": "/calhartt_React_Ver/static/js/main.8bcc6c22.js.map"
+    "main.6b98bad8.js.map": "/calhartt_React_Ver/static/js/main.6b98bad8.js.map"
   },
   "entrypoints": [
     "static/css/main.cbfbe022.css",
-    "static/js/main.8bcc6c22.js"
+    "static/js/main.6b98bad8.js"
   ]
 }
