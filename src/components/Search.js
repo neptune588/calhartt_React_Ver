@@ -126,10 +126,10 @@ export default function Search() {
                                     <img src={process.env.PUBLIC_URL + "/images/cart_icon.png"} alt="cart_btn"/>
                                 </span>
                                 <div className="img_link_01">   
-                                    <img src={object.imgSrc[0]} alt={`product_${index}`}/>
+                                    <img src={process.env.PUBLIC_URL + object.imgSrc[0]} alt={`product_${index}`}/>
                                 </div>
                                 <div className="img_link_02">
-                                    <img src={object.imgSrc[1]} alt={`product_hover_${index}`}/>
+                                    <img src={process.env.PUBLIC_URL + object.imgSrc[1]} alt={`product_hover_${index}`}/>
                                 </div>
                                 {checkExistence(object.isNew, object.isBest)}
                                 <p className="product_name">{object.productNameKor}</p>

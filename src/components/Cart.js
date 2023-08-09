@@ -65,7 +65,7 @@ export default function Cart() {
               <li key={object.id} className="product_list">
                 <div className="product_info_area">
                   <div className="pro_img">
-                    <img src={object.imgSrc} alt={`prodcut_img_0${index}`}/>
+                    <img src={process.env.PUBLIC_URL + object.imgSrc} alt={`prodcut_img_0${index}`}/>
                   </div>
                   <div className="pro_name">
                     <p className="name_kor">{object.productNameKor}</p>
