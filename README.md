@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+![포맷변환 K-094](https://github.com/neptune588/team_project_calhart/assets/112179258/26ee468c-c032-4322-b961-adefc9b46789)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### 프로젝트 명 
+TEAM_PRJECT_CALHARTT_REACT 
 
-In the project directory, you can run:
+### 기획 및 제작 인원 
+기획: 4인 <br/>
+제작: 1인
 
-### `npm start`
+### 기획의도
+앞서 제작한 칼하트 사이트를 리액트 환경에 맞게 제작 해보자는 취지로 만들게 되었습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 제작과정
+전에 만들어둔 코드를 REACT의 형식에 맞게 제작하였기 떄문에, 따로 아이디어 스케치등의 과정은 거치지 않았습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 사이트 유형
+의류 쇼핑몰
 
-### `npm test`
+### 제작기간
+2023-06-20 ~ 2023-07-04 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 개발기술
+REACT, REACT-ROUTER, REACT-BOOTSTRAP, REACT-SWIPTER, REACT-REDUX-TOOLKIT
 
-### `npm run build`
+### 사이트 구성
+MAIN | SUB | DETAIL | CART | PRODUCT SEARCH
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 주요 기능
+MAIN: 기존 자바스크립트로 제작한 박스 슬라이더를 스와이퍼로 교체, 조건부 렌더링 <br />
+SUB: 비동기적 데이터 요청 + useState를 이용한 로딩 이미지 기능(조건부 렌더링), urlParam을 이용하여 각 종류의 상품 데이터 출력, 장바구니 추가 기능<br />
+DETAIL: 리뷰 작성 및 별점 기능, 장바구니 추가 기능, MAIN 및 SUB등 에서 클릭한 상품에 맞는 데이터 출력 기능 <br />
+CART: REDUX-TOOL-KIT을 이용하여 장바구니 관리 기능 구현(전역 상태 관리) <br />
+PRODUCT SEARCH: 제품 검색 및 표기 기능
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 사이트 주소
+https://neptune588.github.io/calhartt_React_Ver/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+리액트 제작 취지에 맞게, 기능 간소화를 하였고 유지 보수를 위하여 각 기능을 컴포넌트화 시켜 구분 해놨습니다.
 
-### `npm run eject`
+벨로그 주소: https://velog.io/@ctr_nike
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+읽어주셔서 감사합니다!
