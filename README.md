@@ -28,9 +28,13 @@ MAIN | SUB | DETAIL | CART | PRODUCT SEARCH
 
 ### 주요 기능
 MAIN: 기존 자바스크립트로 제작한 박스 슬라이더를 스와이퍼로 교체, 조건부 렌더링 <br />
-SUB: 비동기적 데이터 요청 + useState를 이용한 로딩 이미지 기능(조건부 렌더링), urlParam을 이용하여 각 종류의 상품 데이터 출력, 장바구니 추가 기능<br />
+
+SUB: 비동기적 데이터 요청 + useState를 이용한 로딩 이미지 기능(조건부 렌더링), useParams를 이용하여 각 종류의 상품 데이터 출력, 장바구니 추가 기능<br />
+
 DETAIL: 리뷰 작성 및 별점 기능, 장바구니 추가 기능, MAIN 및 SUB등 에서 클릭한 상품에 맞는 데이터 출력 기능 <br />
+
 CART: REDUX-TOOL-KIT을 이용하여 장바구니 관리 기능 구현(전역 상태 관리) <br />
+
 PRODUCT SEARCH: 제품 검색 및 표기 기능
 
 ### 사이트 주소
